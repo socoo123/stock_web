@@ -98,6 +98,10 @@ h1 { margin: 0; font-size: clamp(2.15rem, 4vw, 3rem); letter-spacing: .04em; lin
 .prose h1 { margin: -.1em 0 1.15rem; font-size: clamp(1.75rem, 3.3vw, 2.55rem); line-height: 1.4; }
 .prose p { margin: 0 0 1em; }
 .prose h2 { font-size: 1.45rem; line-height: 1.5; margin: 2.2rem 0 .7rem; }
+.lesson-figure { margin: 1.5rem 0; padding: 1.1rem 0 .8rem; border-block: 1px solid var(--rule); }
+.lesson-figure svg { display: block; width: 100%; max-width: 30rem; height: auto; margin-inline: auto; fill: currentColor; color: var(--ink); font: 14px var(--sans); font-variant-numeric: tabular-nums; }
+.lesson-figure figcaption { margin: .85rem 0 0; color: var(--muted); font-size: .92rem; line-height: 1.65; }
+.prose blockquote { margin: 1rem 0; padding-inline-start: 1rem; border-inline-start: 1px solid var(--accent); font-family: var(--serif); }
 .prose table { width: 100%; margin: 1.4rem 0; border-collapse: collapse; font-size: .94rem; line-height: 1.6; font-variant-numeric: tabular-nums; }
 .prose caption { text-align: start; color: var(--accent); padding-bottom: .45rem; font-weight: 600; }
 .prose th, .prose td { padding: .55rem .45rem; border-block-end: 1px solid var(--rule); vertical-align: top; text-align: start; }
