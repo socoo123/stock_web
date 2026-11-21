@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="用 100 元的模拟账本算回撤和回本：同样相差 20 元，从高点往下算和从低处往上算，分母并不一样。">
+  <title>第 02 课｜跌了 20%，为什么涨 20% 还没回来？｜小白的股票投资启蒙课</title>
+  <link rel="icon" type="image/svg+xml" href="../dollar.svg">
+  <link rel="stylesheet" href="../reading.css?v=3">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="../index.html"><img src="../dollar.svg" width="28" height="28" alt="">小白的股票投资启蒙课</a>
+      <nav aria-label="课程导航"><a href="../index.html#u01">课程目录</a></nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <article class="reading-page" aria-labelledby="lesson-title">
+      <div class="margin-note"><p>第一单元</p><small>第 02 课</small></div>
+      <div class="prose">
+        <h1 id="lesson-title">跌了 20%，为什么涨 20% 还没回来？</h1>
+        <p>假设晚饭后你在核对一份模拟账本。第一页记着“投入 100 元”，昨天那页写着“现在值 80 元”。今天听说这笔投资涨了 20%。不用按计算器，你会在今天那格填回 100 元吗？</p>
+        <p>先只盯着昨天那页。这是一个独立的人民币算例：100 元既是最初投入的钱，也是这几页账上的最高点。中途没有存入、取出或分红，不计费用和利息。账上金额的变化，只来自这笔投资本身的涨跌。</p>
+        <h2>先问：从哪一页出发？</h2>
+        <p>从先前的高点到现在，账户价值少了多少？拿少掉的钱和高点相比，叫作<strong>回撤</strong>。你是站在写着 100 元的那一页往下看。反过来，问“从现在涨多少才能回到原数”，你已经站在写着 80 元的那一页往上看了。缺口还是那个缺口，<strong>用来作比较的那笔钱变小了</strong>。</p>
+        <p>现在算：从 100 元到 80 元，少了 20 元；20 ÷ 100 = 20%，这是回撤幅度。要从 80 元回到 100 元，得靠手上这 80 元多挣出 20 元。20 ÷ 80 = 25%。你也可以倒过来验算：80 元的四分之一恰好是 20 元。</p>
+        <table>
+          <caption>同一个 20 元缺口，两种问法（假设）</caption>
+          <thead><tr><th scope="col">从哪到哪</th><th scope="col">分母</th><th scope="col">结果</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">100 元到 80 元</th><td>100 元</td><td>跌 20%</td></tr>
+            <tr><th scope="row">80 元回到 100 元</th><td>80 元</td><td>须涨 25%</td></tr>
+          </tbody>
+        </table>
+        <h2>把账缩成一行，再试试遮住答案</h2>
+        <p><strong>回到起点所需的涨幅 = 已亏的钱 ÷ 剩下的钱。</strong>如果把起点看成 1，把从起点亏掉的比例记作 <var>d</var>，剩下的比例就是 1 − <var>d</var>。同一行算式也可以写成 <var>d</var> ÷ (1 − <var>d</var>)。不想记字母，就在每次除法下面写清楚“用哪笔钱作分母”。</p>
+        <div class="notebook"><p>拿笔另起一行：假设 100 元跌到 50 元，要回到 100 元，需要多出＿＿元；用来挣这笔钱的只剩＿＿元；所需涨幅是＿＿。</p></div>
+        <p>核对：缺 50 元，也只剩 50 元，所以是 50 ÷ 50 = 100%，要比现在翻一倍。缺口越大，剩下用来填缺口的钱反而越少。</p>
+        <p>这行公式只算“需要多少”，不算“会不会涨”或“要等多久”。它要求手里还有钱作分母；要是已经跌到零，就不能再除。也别把补进去的钱当成涨幅：往 80 元的账户再存 20 元，余额虽回到 100 元，原先那笔投资并没有赚回 20 元。平常高点也未必就是买入时的金额；这题里二者恰好相同。</p>
+        <h2>下车题：从 80 元再涨 20%，现在有多少？</h2>
+        <p>回到开头：从 100 元跌到 80 元，不存不取，接下来只涨了 20%。先在今天那格填一个金额，再看答案。</p>
+        <details><summary>看答案和理由</summary><p><strong>96 元。</strong>这次涨的 20% 要乘的是 80 元，所以只多了 16 元。80 + 16 = 96，离原来的 100 元还差 4 元。先前少掉的 20 元和刚刚多出的 16 元，自然抵不平。</p></details>
+      </div>
+    </article>
+  </main>
+  <footer class="wrap"><a rel="prev" href="01.html">上一课：01 复盘</a><a href="../index.html#u01">单元目录</a><a rel="next" href="03.html">下一课：03 仓位</a></footer>
+</body>
+</html>
