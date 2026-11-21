@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="先把规则和不动的基准写在纸上，再逐期拆开报价、写决定、核账。把不利的结果也留下，分清流程重播与独立检验。">
+  <title>第 56 课｜回测：把规则放回过去，会发生什么？｜小白的股票投资启蒙课</title>
+  <link rel="icon" type="image/svg+xml" href="../dollar.svg">
+  <link rel="stylesheet" href="../reading.css?v=4">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header><div class="wrap topbar">
+    <a class="brand" href="../index.html"><img src="../dollar.svg" width="28" height="28" alt="">小白的股票投资启蒙课</a>
+    <nav aria-label="课程导航"><a href="../index.html#u10">课程目录</a></nav>
+  </div></header>
+  <main id="main" class="wrap">
+    <article class="reading-page" aria-labelledby="lesson-title">
+      <div class="margin-note"><p>第十单元</p><small>第 56 课</small></div>
+      <div class="prose">
+        <h1 id="lesson-title">回测：把规则放回过去，会发生什么？</h1>
+        <p>朋友说：“如果当年我每次都把基金和现金分回两半，应该能比一直拿着赚得多。”你有一笔模拟资金，一次调整要付 2 元。你肯不肯花这 2 元，不能等看完下一期的价格再决定。假如第一次调完，下一期马上跌了，你还肯按原约定接着做吗？</p>
+        <p>把一套已经写好的办法，放回旧数据里，按当时能知道的顺序走一遍，叫<strong>回测</strong>。今天的报价是编的，不是真行情。如果你已经做过<a href="55.html">第 55 课</a>，你见过这条路线。这次重播只检验一件事：别人能否凭你的记录，原样做出每一笔。记得结局不丢人，把它叫作“在没见过的行情上也有效”才有问题。</p>
+
+        <h2>拆报价之前，写下你准备怎样判输赢</h2>
+        <div class="notebook">
+          <p><strong>期 0 封账：</strong>在纸上各画一本账。甲执行再平衡，乙是比较对象（基准）：一直不动。两本都已经有基金 500 份，每份 10 元，现金 5,000 元，各值 10,000 元人民币。不是把一万元分给两本账，也不再扣建仓费。</p>
+          <p><strong>甲的约定：</strong>只在期 1、2 检查。用当期报价算基金市值；若与现金相等，不下单、不付费。否则只买或卖一笔，现金付固定 2 元，两边都调到<strong>扣费后</strong>总值的一半。乙不下单，始终不付费。</p>
+          <p><strong>评分：</strong>期 3 揭价后两本账都只估值、不卖出。写下“甲的总值减乙的总值”；正数是多留下的钱，负数是执行规则的机会代价。不能中途换成与零收益比，也不能只截最顺的一期。</p>
+        </div>
+        <p>在纸上签个日期。不同意这套规则，可以另开一页写自己的想法，但不要拿那一页覆盖这一本。为方便对账，这里允许小数份，计算到最后才四舍五入；没有点差、税、利息、分红、存取款或借款。每期只有一张教学报价，揭晓后短暂锁价，够你算完再照价成交；这<strong>不是</strong>先读完真实收盘行情，再假定自己早已按那个收盘价成交。</p>
+        <figure class="lesson-figure">
+          <svg viewBox="0 0 320 251" role="img" aria-labelledby="clock-title clock-desc">
+            <title id="clock-title">下一张报价要等这一行结账后才能打开</title>
+            <desc id="clock-desc">从上期份额和现金出发，用本期锁定报价算市值。在检查期不相等才成交扣费，否则不交易。两条路都要用本期价格估值，并把份额和现金结转；末期只估值就停止。</desc>
+            <g fill="none" stroke="currentColor" stroke-width="1.4">
+              <path d="M160 30v14m-4-5 4 5 4-5 M160 70v15m-4-5 4 5 4-5 M160 112v12H75v15m-4-5 4 5 4-5 M160 124h85v15m-4-5 4 5 4-5 M75 175v14h170v-14 M160 189v16m-4-5 4 5 4-5"/>
+              <rect x="12" y="142" width="126" height="33" rx="3"/><rect x="182" y="142" width="126" height="33" rx="3"/>
+            </g>
+            <g text-anchor="middle">
+              <text x="160" y="23">带入：上期末份额、现金</text>
+              <text x="160" y="64">只拆本期报价，算基金市值</text>
+              <text x="160" y="105">是检查期，且市值不等于现金？</text>
+              <text x="75" y="164">是：成交，扣费</text><text x="245" y="164">否：原样，不扣费</text>
+              <text x="160" y="226">本期估值、落笔 → 再拆下一期</text>
+            </g>
+          </svg>
+          <figcaption>甲账从上往下读，一张纸只走一次分岔。报价单位是元/份，市值是份数乘元/份。跨期带过去的是<strong>份额和现金</strong>，不是上期的基金市值。乙直接走不交易的一支。期 3 在本期估值处停笔。</figcaption>
+        </figure>
+
+        <h2>现在当记账员，不当预言家</h2>
+        <p>在纸上为甲、乙各留三行：<strong>期号和报价｜带入份额、现金｜买卖多少元、费多少元｜期末份额、现金、总值</strong>。按顺序展开外层的报价卡；写完决定再开里面的核账页。不要一次打开三张。</p>
+        <details>
+          <summary>第一张｜揭晓期 1 报价</summary>
+          <p>现在每份 <strong>12 元</strong>，价格锁定。下一张仍扣着。基金现在值多少？若甲要调仓，卖出的金额只是原来两边差额的一半吗？先写甲的买卖方向和金额；乙也写一行，空白不代表不动。</p>
+          <details>
+            <summary>已记下第一笔，再核账</summary>
+            <p>甲的基金值 500 × 12 ＝ 6,000 元，现金 5,000 元。成交前共 11,000，成交后只剩 10,998，两边各应有 5,499 元。因此卖 6,000 − 5,499 ＝ 501 元，即 41.75 份。若只卖 500 元，现金付费后会比基金少 2 元。</p>
+            <table><caption>期 1 封账｜数额为人民币元，基金按 12 元/份估值</caption>
+              <thead><tr><th scope="col">账本</th><th scope="col">期末份额与现金</th><th scope="col">期末总值</th></tr></thead>
+              <tbody><tr><th scope="row">甲：卖出</th><td>458.25 份；现金 5,000 ＋ 501 − 2 ＝ 5,499</td><td>5,499 ＋ 5,499 ＝ 10,998</td></tr>
+              <tr><th scope="row">乙：不动</th><td>500 份；现金 5,000</td><td>6,000 ＋ 5,000 ＝ 11,000</td></tr></tbody>
+            </table>
+          </details>
+        </details>
+        <details>
+          <summary>第二张｜期 1 已封账，揭晓期 2 报价</summary>
+          <p>现在每份 <strong>8 元</strong>。从自己的上一行抄两项：还持有几份、还剩多少现金。你愿不愿意买，和原规则让不让你买，是两个问题。先按原规则写一笔；若想改，在旁边另记理由。</p>
+          <details>
+            <summary>已写下期 2 的方向、费用和份额，再核账</summary>
+            <p>甲原来的 458.25 份现在只值 3,666 元；现金还是 5,499。扣费后总值 3,666 ＋ 5,499 − 2 ＝ 9,163 元，两边各应有 4,581.50 元。所以动用现金<strong>买入</strong> 915.50 元基金，比买入款多付的那 2 元不是基金份额。</p>
+            <table><caption>期 2 封账｜数额为人民币元，基金按 8 元/份估值</caption>
+              <thead><tr><th scope="col">账本</th><th scope="col">期末份额与现金</th><th scope="col">期末总值</th></tr></thead>
+              <tbody><tr><th scope="row">甲：买入</th><td>458.25 ＋ 915.50 ÷ 8 ＝ 572.6875 份；现金 5,499 − 915.50 − 2 ＝ 4,581.50</td><td>4,581.50 × 2 ＝ 9,163</td></tr>
+              <tr><th scope="row">乙：不动</th><td>500 份；现金 5,000</td><td>4,000 ＋ 5,000 ＝ 9,000</td></tr></tbody>
+            </table>
+            <p>甲相对乙领先 163 元，却比自己的期 0 少 837 元。领先不是没有亏钱；而且约定的评分时刻还没到。</p>
+          </details>
+        </details>
+        <details>
+          <summary>第三张｜期 2 已封账，揭晓期 3 报价</summary>
+          <p>最后每份 <strong>11 元</strong>。两边估值后并非各半，要不要再调一次？先填完最后一行，再用期 0 写下的尺子算一次输赢。</p>
+          <details>
+            <summary>已写下是否下单，再拆期末对账单</summary>
+            <table><caption>期 3 只估值｜没有卖出，不收新费用；下列金额均为人民币元</caption>
+              <thead><tr><th scope="col">账本</th><th scope="col">基金按现价＋现金</th><th scope="col">合计（到分）</th></tr></thead>
+              <tbody><tr><th scope="row">甲</th><td>572.6875 × 11 ＋ 4,581.50</td><td>10,881.06</td></tr>
+              <tr><th scope="row">乙</th><td>500 × 11 ＋ 5,000</td><td>10,500.00</td></tr></tbody>
+            </table>
+            <p>期 3 不是检查期。甲三期合计交过 4 元，已记进现金，不再从终值减一次。按每本期 0 的 10,000 元计算，甲累计约赚 8.81%，乙赚 5.00%；甲比乙多留下约 <strong>381.06 元</strong>。这里的“期”没约定是几年或几月，别把它印成“年收益率”。</p>
+          </details>
+        </details>
+
+        <h2>把能签字的结论写短一点</h2>
+        <p>“按封存规则，在这三张报价、这个收费办法和成交假设下，甲的期末总值比乙高。”你可以签这句话。换成“调仓能稳定赚钱”，哪一行账能支持“稳定”两个字？没跑赢就改日期、费率或比较对象，再只交最好的一本，判的已不是最初那道题。想改规则就编号另开实验，把旧规则、失败的结果和改动日期一起留档。</p>
+        <p><strong>现实资料只用来核对边界：</strong><a href="https://www.govinfo.gov/content/pkg/CFR-2024-title17-vol1/pdf/CFR-2024-title17-vol1-sec4-41.pdf#page=2">美国《联邦法规》17 CFR §4.41(b)(1)(i)，2024 年 4 月 1 日版，刊页 293</a>，在商品权益模拟表现的广告警语中区分了模拟与真实成交，并点出流动性和事后视角。它不是本题基金的收费规定。上面所有报价、份额条件与费用都是纸面设定。</p>
+
+        <h2>下班三分钟：看见 8 元，不等于能按 8 元买</h2>
+        <p>保留原账，另开一本。只改期 2 的成交约定：屏幕显示 8 元时算出买单，提交后份数固定，按下一笔可成交报价全部买入，不撤单、不再调一次。先用 8 元的信号价在纸上写下买几份，然后再翻成交回报。期 1 仍照原账，期 3 仍按 11 元估值。</p>
+        <details><summary>已写下份数，拆开成交回报</summary>
+          <p>成交价是 <strong>12 元/份</strong>。你的买单没有变，账上的哪一栏变了？先填“期 2 末现金____元，期 3 末总值____元”，再判断是否跑赢不动账户。能不能因为成交后不再各半，就改写已经提交的买单？</p>
+          <details><summary>核对成交单，再给这次回测打分</summary>
+            <p>买单仍是 915.50 ÷ 8 ＝ 114.4375 份。实际货款却是 114.4375 × 12 ＝ 1,373.25 元，现金剩 5,499 − 1,373.25 − 2 ＝ 4,123.75 元。期 3 末，572.6875 份基金按 11 元估值，加现金共 <strong>10,423.31 元</strong>，比不动账户的 10,500 元少约 76.69 元。</p>
+            <p>和原账比，两本调仓账的末期份数完全一样，费用也一样。差的 457.75 元，全是这张买单每份多付的 4 元。若看见 12 元还能撤单重算，那是另一项成交约定，不能事后补进来。下次看回测，先找这两栏：<strong>产生信号时看见什么价？账上的成交价来自哪一刻？</strong></p>
+          </details>
+        </details>
+      </div>
+    </article>
+  </main>
+  <footer class="wrap"><a rel="prev" href="55.html">上一课：55 第一次手算再平衡</a><a rel="next" href="57.html">下一课：57 漂亮收益曲线的三种错觉</a></footer>
+</body>
+</html>

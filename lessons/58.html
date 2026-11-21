@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="同样一万元，四年后都变成 14,641 元。沿着两条扣费后资金曲线，算年化、最大回撤、收复前高的时间，再核对真正要用钱的那一天。">
+  <title>第 58 课｜收益很高的策略，我拿得住吗？｜小白的股票投资启蒙课</title>
+  <link rel="icon" type="image/svg+xml" href="../dollar.svg">
+  <link rel="stylesheet" href="../reading.css?v=4">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header><div class="wrap topbar">
+    <a class="brand" href="../index.html"><img src="../dollar.svg" width="28" height="28" alt="">小白的股票投资启蒙课</a>
+    <nav aria-label="课程导航"><a href="../index.html#u10">课程目录</a></nav>
+  </div></header>
+  <main id="main" class="wrap">
+    <article class="reading-page" aria-labelledby="lesson-title">
+      <div class="margin-note"><p>第十单元</p><small>第 58 课</small></div>
+      <div class="prose">
+        <h1 id="lesson-title">收益很高的策略，我拿得住吗？</h1>
+        <p>你替家里管一万元，第 3 年末要从中付 9,000 元，没有别的钱垫付。两张策略卡都只写着：“上一次试验，投入 10,000 元，四年后剩 14,641 元，费用已扣。”你愿意让其中任意一条来管这笔钱吗？选错的代价不是少排一名，而是该付款时钱不够。先别选甲乙，在纸上写下你还要看哪一天的账。</p>
+        <p>下面<strong>另起两本跨年纸面账</strong>，不是把第 56 课的三期当成年。两本都从同一个时点的人民币 10,000 元算起，各过四个完整年度，不是把本金分成两份。给出的都是扣完全部投资费用的账户净值，收益都留在账户内；没有另收的税费、杠杆或中途存取款。这里只取得年初起点和四个年末的估值，没有年内报价。先看不断档持有的两条完整路径，后面再另算付款情形。</p>
+
+        <h2>第一把尺只看两个端点：等效年化</h2>
+        <p>两张卡的累计收益都是（14,641 − 10,000）÷ 10,000 ＝ <strong>46.41%</strong>。可是每年赚 46.41% ÷ 4 吗？那样分，相当于让每年都只用最初的 10,000 元赚钱。收益留在账户里，第二年面对的已不是第一年的本金。</p>
+        <p>换个问题：找一个<strong>每年都一样</strong>的增长率，让起点的钱经过四次增长，恰好走到终点。试 10%：10,000 → 11,000 → 12,100 → 13,310 → 14,641，正好。表格可填 <code>=(14641/10000)^(1/4)-1</code>，把结果显示成百分数：两条都是 <strong>10.00% 的几何年化</strong>。分母是起始净值，指数里填四个年度间隔，不是五个估值点。这个等效速度不是每年实赚 10%，更不是下一年到账的利息。</p>
+        <p><strong>公式出处：</strong><a href="https://www.sec.gov/files/formn-1a-info.pdf#page=65">美国 SEC《Form N-1A》，2020 年 1 月 16 日公开参考版，PDF 第 65 页</a>，找 <span lang="en">Average Annual Total Return Quotation</span>。原式是用期初金额和平均年复利率，经若干年乘到期末金额；这里仅借它核对复利算法，人民币金额、费后业绩与期限都是教学设定，不引用任何基金的成绩。</p>
+
+        <h2>把四年摊开：甲、乙走过的是同一座山吗？</h2>
+        <figure class="lesson-figure">
+          <svg viewBox="0 0 320 252" role="img" aria-labelledby="path-title path-desc">
+            <title id="path-title">甲和乙起终点相同，第二年下跌的深度不同</title>
+            <desc id="path-desc">横轴为起点和四个年末，纵轴为人民币千元。甲的年末金额依次为十二、十一点四、十二点六、十四点六四一千元。乙依次为十四、八点四、十点五、十四点六四一千元。两者都从十千元开始；甲在第三年末收复前高，乙在第四年末才收复。</desc>
+            <g fill="none" stroke="currentColor" stroke-width="1.2"><path d="M42 33v163h260"/></g>
+            <g fill="none" stroke="var(--rule)" stroke-width="1"><path d="M42 36h260 M42 76h260 M42 116h260 M42 156h260"/></g>
+            <text x="7" y="17">净值（千元）</text>
+            <g text-anchor="end"><text x="35" y="41">16</text><text x="35" y="81">14</text><text x="35" y="121">12</text><text x="35" y="161">10</text><text x="35" y="201">8</text></g>
+            <path d="M44 156L108 116 172 128 236 104 300 63.18" fill="none" stroke="var(--accent)" stroke-width="2.6"/>
+            <g fill="var(--accent)"><circle cx="44" cy="156" r="3.5"/><circle cx="108" cy="116" r="3.5"/><circle cx="172" cy="128" r="3.5"/><circle cx="236" cy="104" r="3.5"/><circle cx="300" cy="63.18" r="3.5"/></g>
+            <path d="M44 156L108 76 172 188 236 146 300 63.18" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="5 4"/>
+            <g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="40" y="152" width="8" height="8"/><rect x="104" y="72" width="8" height="8"/><rect x="168" y="184" width="8" height="8"/><rect x="232" y="142" width="8" height="8"/><rect x="296" y="59.18" width="8" height="8"/></g>
+            <g text-anchor="middle"><text x="44" y="216">0</text><text x="108" y="216">1</text><text x="172" y="216">2</text><text x="236" y="216">3</text><text x="300" y="216">4</text></g>
+            <path d="M15 239h20" stroke="var(--accent)" stroke-width="2.6"/><text x="40" y="244">甲</text><path d="M71 239h20" stroke="currentColor" stroke-width="2" stroke-dasharray="5 4"/><text x="96" y="244">乙</text><text x="185" y="244">距起点的年数</text>
+          </svg>
+          <figcaption>纵轴是扣费后净值，每一大格 2 千元，底部从 8 千元起，不是零；横轴每格一年。沿甲的圆点实线、乙的方点虚线分别读，不要把两条线的峰谷配在一起。连线只标出相邻观测点，不表示年内平稳行进。</figcaption>
+        </figure>
+        <table><caption>原始底账｜年末估值，单位为人民币元；第 0 行是起点</caption>
+          <thead><tr><th scope="col">距起点</th><th scope="col">甲净值</th><th scope="col">乙净值</th></tr></thead>
+          <tbody><tr><th scope="row">0 年</th><td>10,000</td><td>10,000</td></tr>
+          <tr><th scope="row">1 年</th><td>12,000</td><td>14,000</td></tr>
+          <tr><th scope="row">2 年</th><td>11,400</td><td>8,400</td></tr>
+          <tr><th scope="row">3 年</th><td>12,600</td><td>10,500</td></tr>
+          <tr><th scope="row">4 年</th><td>14,641</td><td>14,641</td></tr></tbody>
+        </table>
+
+        <h2>第二把尺从已到过的高处往下量</h2>
+        <p>拿一张纸遮住未来的行，只看乙。第 1 年末，已经见过的最高净值是 14,000 元。移开一行，手中还有 8,400 元。相对起点只少了 1,600 元，相对刚才的高点却少了 <strong>5,600 元</strong>。把这 5,600 除以哪个数？问的是“从到过的高点丢了几成”，所以分母是 14,000，不是起点的 10,000，也不是谷底的 8,400。</p>
+        <p>自己做表只加两列就行：<strong>截至本行的高点</strong>取“上一行高点与本行净值中较大的数”（首行就用起点）；<strong>本行回撤幅度</strong>＝（截至本行的高点 − 本行净值）÷ 截至本行的高点。这里用正数写跌幅；在新高或持平的高点，回撤是 0。把这列里最大的数圈起来，就是这组观测点上的<strong>最大回撤</strong>。</p>
+        <table><caption>逐年复核｜每格依次为“截至当时的高点（元）／当前回撤幅度”</caption>
+          <thead><tr><th scope="col">距起点</th><th scope="col">甲</th><th scope="col">乙</th></tr></thead>
+          <tbody><tr><th scope="row">0 年</th><td>10,000／0%</td><td>10,000／0%</td></tr>
+          <tr><th scope="row">1 年</th><td>12,000／0%</td><td>14,000／0%</td></tr>
+          <tr><th scope="row">2 年</th><td>12,000／5%</td><td>14,000／40%</td></tr>
+          <tr><th scope="row">3 年</th><td>12,600／0%</td><td>14,000／25%</td></tr>
+          <tr><th scope="row">4 年</th><td>14,641／0%</td><td>14,641／0%</td></tr></tbody>
+        </table>
+        <p>甲最深的一次是（12,000 − 11,400）÷ 12,000 ＝ <strong>5%</strong>；乙是（14,000 − 8,400）÷ 14,000 ＝ <strong>40%</strong>。不能拿第 4 年的 14,641 元去配第 2 年的低点，那样就把还没拥有过的钱也算成了“曾经失去”。如果你事前写的是“不能接受从见过的年末高点少掉超过 2,000 元”，甲这次少 600 元没有触线，乙少 5,600 元已经触线，尽管两张成绩单都写着年化 10%。这条历史线没有触线，不等于以后有损失上限；年内若出现更深的谷，年末数据也看不见。</p>
+
+        <h2>第三把尺要看日历：反弹，不等于收复</h2>
+        <p>再用纸盖住第 4 年。乙从第 2 年末的 8,400 元涨到第 3 年末的 10,500 元，涨了 25%。此时已超过起始的 10,000 元，为什么这次下跌还没走完？因为要收复的是<strong>第 1 年末的 14,000 元</strong>，不是起始本金。此刻离前高仍差 3,500 元。站在第 3 年末应填“距该高点已过 2 年，<strong>尚未收复</strong>”；未来还要等多久当时不知道，不能填“2 年回本”。</p>
+        <p>揭开最后一行。对每条线找到最大回撤的那个高点、其后的谷底，再找谷底之后<strong>首个达到或超过原高点</strong>的年末。同一次下跌，有两只不同的秒表：</p>
+        <table><caption>在第 4 年末回看｜年数是两个年末刻度之差，不是表格的行数</caption>
+          <thead><tr><th scope="col">路径</th><th scope="col">谷底 → 收复</th><th scope="col">原高点 → 收复</th></tr></thead>
+          <tbody><tr><th scope="row">甲</th><td>第 2 → 第 3 年末，<strong>1 年</strong></td><td>第 1 → 第 3 年末，<strong>2 年</strong></td></tr>
+          <tr><th scope="row">乙</th><td>第 2 → 第 4 年末，<strong>2 年</strong></td><td>第 1 → 第 4 年末，<strong>3 年</strong></td></tr></tbody>
+        </table>
+        <p>乙的两个“2 年”别混：站在第 3 年末，原高点已经过去 2 年但还没回来；事后站在第 4 年末，才知道从<strong>谷底反弹到收复</strong>用了 2 年，从<strong>原高点一直等到收复</strong>用了 3 年。这是年末刻度上的首次收复，不是声称找到了具体交易日。</p>
+
+        <h2>下班三分钟：学费提前一年，表格该看哪一行？</h2>
+        <p>回到开头：9,000 元必须在第 3 年末付清。现在<strong>只把付款日改到第 2 年末</strong>。假设每条路径都可在该年末按表中金额变现并及时到账，不另收费；单独留的现金不计息，不得借款。先在纸上写：若一万元全放甲、全放乙，各在哪个日期够付，哪里有缺口？若还想拿一部分参加乙、又要扛住<strong>题里这一次</strong>下跌，起点至少留多少现金？各自独立重算，不要把已经付过的 9,000 元又拿去享受原路径的四年终值。</p>
+        <details><summary>先写出两个付款日和一笔现金，再看理由</summary>
+          <p>原日期：第 3 年末，甲有 12,600 元，乙有 10,500 元，都够。乙虽没收复前高，付这笔账却不需要 14,000 元。新日期：第 2 年末，甲有 11,400 元，够；乙只有 8,400 元，<strong>差 600 元</strong>。第 4 年两者同样漂亮的终值不能替第 2 年付款。</p>
+          <p>若独立重排期初的一万元，按题设金额等比例缩放，每投进乙 1 元，第 2 年末剩 0.84 元；把这 1 元改留现金，就能多保住 0.16 元。因此补 600 元缺口，至少要在起点留下 600 ÷ 0.16 ＝ <strong>3,750 元</strong>。复核：3,750 ＋ 6,250 × 0.84 ＝ 9,000 元，恰好；不是只留 600 元就够。</p>
+          <p>3,750 元只扛住了这条纸面路径，不是通用配置。如果条件是“届时一分钱也不靠卖价”，同一道算术题要先单独备齐 9,000 元。把自己的答案收进账本：哪一天非付不可，能承受的是从哪个高点少掉多少，如果到用款日还没涨回来，靠什么付款？</p>
+        </details>
+      </div>
+    </article>
+  </main>
+  <footer class="wrap"><a rel="prev" href="57.html">上一课：57 漂亮收益曲线的三种错觉</a><a href="../index.html#u10">单元目录</a></footer>
+</body>
+</html>
