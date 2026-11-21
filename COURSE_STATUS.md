@@ -1,10 +1,10 @@
 # 《小白的股票投资启蒙课》接力记录
 
-**下次输入：`/stock-next U11`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
+**下次输入：`/stock-next U12`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
 
-- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)、[第三单元 11–16 课](https://socoo123.github.io/stock_web/#u03)、[第四单元 17–21 课](https://socoo123.github.io/stock_web/#u04)、[第五单元 22–31 课](https://socoo123.github.io/stock_web/#u05)、[第六单元 32–37 课](https://socoo123.github.io/stock_web/#u06)、[第七单元 38–43 课](https://socoo123.github.io/stock_web/#u07)、[第八单元 44–48 课](https://socoo123.github.io/stock_web/#u08)、[第九单元 49–53 课](https://socoo123.github.io/stock_web/#u09)、[第十单元 54–58 课](https://socoo123.github.io/stock_web/#u10)。
-- 已上线正文：**58 / 66**。U10 [Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44916876603)，目录及 53–58 课均返回 HTTP 200，与核验稿逐字节一致。已复算再平衡、成交延迟、三种回测偏差、年化、回撤与前高收复时长。375px 下逐课查看图表；在线从目录进入 56，逐期揭价、核对成交，再经 57 到 58 展开付款题并返回单元目录。
-- 当前批：**U11，59–62 课待发布**。四篇正文、目录及前后导航已落盘，不再派稿；发布后核对在线版本，再交接 U12。
+- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)、[第三单元 11–16 课](https://socoo123.github.io/stock_web/#u03)、[第四单元 17–21 课](https://socoo123.github.io/stock_web/#u04)、[第五单元 22–31 课](https://socoo123.github.io/stock_web/#u05)、[第六单元 32–37 课](https://socoo123.github.io/stock_web/#u06)、[第七单元 38–43 课](https://socoo123.github.io/stock_web/#u07)、[第八单元 44–48 课](https://socoo123.github.io/stock_web/#u08)、[第九单元 49–53 课](https://socoo123.github.io/stock_web/#u09)、[第十单元 54–58 课](https://socoo123.github.io/stock_web/#u10)、[第十一单元 59–62 课](https://socoo123.github.io/stock_web/#u11)。
+- 已上线正文：**62 / 66**。U11 [Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44917851794)，目录及 58–62 课均返回 HTTP 200，与核验稿逐字节一致。已复算同日两笔付款、十年费用差、三条投入路径及保护到期账。375px 下逐课查看机制图、展开练习，无横向溢出。线上实走 59 ↔ 58 跨单元导航，从目录进入 62、展开到期题并返回 U11。
+- 下一批：**U12，63–66 课｜AI 当研究助理，决定由自己负责**。按 63–64、65–66 分工，尚未派发。先锁定可定位的年报原文和模拟决策日可得材料，再核 AI 引文、写反证和毕业说明。U11 无待统稿或待发布文件。
 - 写作模型：`openai-codex/gpt-6.2-astra`；思考强度：`xhigh`。通用 `task` 子 Agent 已绑定模型角色 `@chapter_worker`，直接使用绑定，不再重复传 `model`。
 - 课程范围与题目：[PLAN.md](PLAN.md)；执行规程：[stock-next](.omp/commands/stock-next.md)。如果快捷指令没有加载，可直接发送「读取 COURSE_STATUS.md 和 .omp/commands/stock-next.md，执行记录中的下一批」。
 
@@ -24,7 +24,7 @@
 | U08 | 五场历史实验 | 3 | 44–45；46–47；48 | 44–48 均已上线 |
 | U09 | 投资人的判断方法 | 3 | 49–50；51–52；53 | 49–53 均已上线 |
 | U10 | 用数据制定和检验规则 | 2 | 54–55；56–58 | 54–58 均已上线 |
-| U11 | 普通人的投资安排 | 2 | 59–60；61–62 | 59–62 已统稿，待发布核验 |
+| U11 | 普通人的投资安排 | 2 | 59–60；61–62 | 59–62 均已上线 |
 | U12 | AI 研究与毕业练习 | 2 | 63–64；65–66 | 未开始 |
 
 ## U01 任务单｜先学会暂停，再学怎么买
