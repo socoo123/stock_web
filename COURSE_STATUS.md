@@ -1,12 +1,12 @@
 # 《小白的股票投资启蒙课》接力记录
 
-**下次输入：`/stock-next U12`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
+**全课完结。** 12 个单元、66 节正文均已上线。没有下一批，无待统稿或待发布文件。
 
-- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)、[第三单元 11–16 课](https://socoo123.github.io/stock_web/#u03)、[第四单元 17–21 课](https://socoo123.github.io/stock_web/#u04)、[第五单元 22–31 课](https://socoo123.github.io/stock_web/#u05)、[第六单元 32–37 课](https://socoo123.github.io/stock_web/#u06)、[第七单元 38–43 课](https://socoo123.github.io/stock_web/#u07)、[第八单元 44–48 课](https://socoo123.github.io/stock_web/#u08)、[第九单元 49–53 课](https://socoo123.github.io/stock_web/#u09)、[第十单元 54–58 课](https://socoo123.github.io/stock_web/#u10)、[第十一单元 59–62 课](https://socoo123.github.io/stock_web/#u11)。
-- 已上线正文：**62 / 66**。U11 [Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44917851794)，目录及 58–62 课均返回 HTTP 200，与核验稿逐字节一致。已复算同日两笔付款、十年费用差、三条投入路径及保护到期账。375px 下逐课查看机制图、展开练习，无横向溢出。线上实走 59 ↔ 58 跨单元导航，从目录进入 62、展开到期题并返回 U11。
-- 当前批：**U12，63–66 课｜AI 当研究助理，决定由自己负责**。四课已统稿；目录、62–66 相邻导航、手机图表和展开练习已核。仅待 Pages 发布及在线核验，不再派发写作者。
+- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)、[第三单元 11–16 课](https://socoo123.github.io/stock_web/#u03)、[第四单元 17–21 课](https://socoo123.github.io/stock_web/#u04)、[第五单元 22–31 课](https://socoo123.github.io/stock_web/#u05)、[第六单元 32–37 课](https://socoo123.github.io/stock_web/#u06)、[第七单元 38–43 课](https://socoo123.github.io/stock_web/#u07)、[第八单元 44–48 课](https://socoo123.github.io/stock_web/#u08)、[第九单元 49–53 课](https://socoo123.github.io/stock_web/#u09)、[第十单元 54–58 课](https://socoo123.github.io/stock_web/#u10)、[第十一单元 59–62 课](https://socoo123.github.io/stock_web/#u11)、[第十二单元 63–66 课](https://socoo123.github.io/stock_web/#u12)。
+- 已上线正文：**66 / 66**。U12 [Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44919917798)。目录及 62–66 课均返回 HTTP 200，与核验稿逐字节一致。375px 宽逐课查看 U12 机制图、展开练习，无横向溢出。已走通 62 ↔ 63 跨单元导航，在线从目录进入毕业课、展开改价题并返回 U12。
+- 毕业核验：海天年报第 83、168–169 页的年份列、应收与应付行及调节差额已核；白宫说明的政策动词、模拟采购单和独立的持仓压力账已核。中炬年报与嘉实 ETF 披露已对照，复算毕业账：盈利门槛为每股 10.87 元，模拟持有 200 股时受损失预算约束，最高买价为 10.45 元。
 - 写作模型：`openai-codex/gpt-6.2-astra`；思考强度：`xhigh`。通用 `task` 子 Agent 已绑定模型角色 `@chapter_worker`，直接使用绑定，不再重复传 `model`。
-- 课程范围与题目：[PLAN.md](PLAN.md)；执行规程：[stock-next](.omp/commands/stock-next.md)。如果快捷指令没有加载，可直接发送「读取 COURSE_STATUS.md 和 .omp/commands/stock-next.md，执行记录中的下一批」。
+- 课程范围与题目：[PLAN.md](PLAN.md)；分批写作与发布规程：[stock-next](.omp/commands/stock-next.md)。
 
 ## 各单元的写作批次
 
@@ -25,7 +25,7 @@
 | U09 | 投资人的判断方法 | 3 | 49–50；51–52；53 | 49–53 均已上线 |
 | U10 | 用数据制定和检验规则 | 2 | 54–55；56–58 | 54–58 均已上线 |
 | U11 | 普通人的投资安排 | 2 | 59–60；61–62 | 59–62 均已上线 |
-| U12 | AI 研究与毕业练习 | 2 | 63–64；65–66 | 63–66 已统稿，待发布核验 |
+| U12 | AI 研究与毕业练习 | 2 | 63–64；65–66 | 63–66 均已上线 |
 
 ## U01 任务单｜先学会暂停，再学怎么买
 
