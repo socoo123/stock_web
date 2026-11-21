@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="核对两只沪深 300 ETF 四季报的净值与基准，再用一组独立的人民币报价，把持有人实际收到的钱与基金净值对账。">
+  <title>第 34 课｜同样跟踪一个指数，结果为什么不同？｜小白的股票投资启蒙课</title>
+  <link rel="icon" type="image/svg+xml" href="../dollar.svg">
+  <link rel="stylesheet" href="../reading.css?v=4">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header><div class="wrap topbar">
+    <a class="brand" href="../index.html"><img src="../dollar.svg" width="28" height="28" alt="">小白的股票投资启蒙课</a>
+    <nav aria-label="课程导航"><a href="../index.html#u06">课程目录</a></nav>
+  </div></header>
+  <main id="main" class="wrap">
+    <article class="reading-page" aria-labelledby="lesson-title">
+      <div class="margin-note"><p>第六单元</p><small>第 34 课</small></div>
+      <div class="prose">
+        <h1 id="lesson-title">同样跟踪一个指数，结果为什么不同？</h1>
+        <p>2025 年 1 月 22 日，你手上有两份已经公开的四季报。模拟账户里是华泰柏瑞 510300。搭档想换成易方达 510310：“都跟沪深 300，上季一个跌 1.91%，一个只跌 1.84%。干吗不换成跌得少的？”你想要的是以尽量低的代价拿到接近指数的表现。先选：仅凭这一季就换、维持原状再查，还是觉得两只可以什么都不管随便换？写下你比较的究竟是指数点位、基金净值，还是自己能成交的价格。</p>
+
+        <h2>基金少跌了，持有人不一定赚了</h2>
+        <p>先核对报告封面、§2「基金产品概况」和 §3.2.1 同期比较表。<a href="https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-01-22/510300_20250122_TVL5.pdf#page=2">华泰柏瑞四季报</a>于 1 月 22 日送出，是股票型指数基金，交易型开放式；<a href="https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-01-21/510310_20250121_J5DY.pdf#page=2">易方达四季报</a>于 1 月 21 日送出，是股票型指数基金，交易型开放式、发起式。查的是 ETF 本身，不是名字相近的联接基金。两份 §2 列出的业绩比较基准都是<strong>沪深 300 指数</strong>。都取截至 2024 年 12 月 31 日的“过去三个月”，即 10 月 1 日至 12 月 31 日，不把成立以来、过去一年和本季的收益率混在一起。</p>
+        <table>
+          <caption>报告原表的同一行｜①为基金份额净值增长率，③为各自列示的基准收益率</caption>
+          <thead><tr><th scope="col">基金</th><th scope="col">① 净值</th><th scope="col">③ 基准</th><th scope="col">① 减 ③</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><a href="https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-01-22/510300_20250122_TVL5.pdf#page=3">510300<br>第 3 页</a></th><td>−1.91%</td><td>−2.06%</td><td>+0.15 个百分点</td></tr>
+            <tr><th scope="row"><a href="https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-01-21/510310_20250121_J5DY.pdf#page=4">510310<br>第 4 页</a></th><td>−1.84%</td><td>−2.06%</td><td>+0.22 个百分点</td></tr>
+          </tbody>
+        </table>
+        <p>第一行怎么算？−1.91% −（−2.06%）= <strong>+0.15 个百分点</strong>。正号是“比基准少跌”，不是赚 0.15%。把三条收益都从 10,000 元起算，按报告的收益口径、暂不计个人交易费，指数对应 9,794 元，510300 对应 9,809 元，510310 对应 9,816 元。后两者相差 7 元，<strong>都不到起点的一万元</strong>。这是把历史收益换算成同一尺度，不是两张真实交割单。表里也不是 ETF 的二级市场收盘价涨跌；有基金分红时，更不能只用前后两张未复权的每份净值硬算持有回报。</p>
+
+        <h2>一季落在哪里，不等于每天跟得有多稳</h2>
+        <p>上面用“基金同期回报减去基准同期回报”得到的是这段时间的<strong>跟踪差异</strong>，有正有负。若只问季末与基准的距离，+0.15 比 +0.22 更近；若只问本季谁的净值回报高，答案却反过来。还可以问第三个问题：每天基金涨跌幅和指数涨跌幅之间的差，忽大忽小吗？把逐日的差值排成一列，量它们的波动（通常取标准差），才是在算<strong>跟踪误差</strong>。用日数据算出的结果和把它折算成一年的结果，不是同一单位口径。</p>
+        <p>原文恰好有个容易排错名次的例子。<a href="https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-01-22/510300_20250122_TVL5.pdf#page=7">510300 第 7 页 §4.4</a>写“期间<strong>日</strong>跟踪误差为 0.019%”；<a href="https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-01-21/510310_20250121_J5DY.pdf#page=9">510310 第 9 页 §4.5</a>写“<strong>年化</strong>跟踪误差 0.21%”。直接拿 0.019 和 0.21 比大小，漏了单位。也不要拿 §3.2.1 最后一列“②−④”来代替：那是基金自己的波动减去基准自己的波动，和“逐日两者之差的波动”不是一个算法。单有季末两个回报率，算不出每天贴得稳不稳。</p>
+
+        <h2>费用从谁的钱里扣，又是从哪天开始扣？</h2>
+        <p>指数按规则计算；实际基金要收股票的股息，留些现金，遇到指数换成份或基金申赎要调仓，交易有成本。比较基准写的是沪深 300 指数，不是另外的沪深 300 全收益指数。按<a href="https://oss-ch.csindex.com.cn/contract/cms_add/20240726155028-《中证指数有限公司股票指数计算规则》.pdf#page=5">中证指数《股票指数计算规则》2024 年 7 月版 §2.2</a>，价格指数看样本价格，不把现金红利作为再投资收益；全收益指数考虑税前现金红利再投资。股票除息后，基金持有的相应股息并没有凭空消失。因此有费用的基金也可能跑在价格指数前面。只看比较表，拆不出本季度有多少差异来自股息、有多少来自费用或交易时点。</p>
+        <p>看一条具体的费用时间线。<a href="https://www.sse.com.cn/disclosure/fund/announcement/c/new/2024-11-20/510300_20241120_FOBE.pdf#page=1">华泰柏瑞 2024 年 11 月 20 日调费公告第 1 页</a>：510300 从 <strong>11 月 22 日</strong>起，管理费年率从 0.50% 降为 0.15%，托管费年率从 0.10% 降为 0.05%。附件第 3 页列的计提办法是以前一日基金资产净值乘相应年费率，再除以当年天数。<a href="https://www.sse.com.cn/disclosure/fund/announcement/c/new/2024-11-08/510310_20241108_AB6T.pdf#page=3">易方达 2024 年 11 月 8 日产品资料概要第 3 页</a>则把管理费 0.15%、托管费 0.05% 列在“以下费用将从基金资产中扣除”之下；这两项也不是基金全部运作成本。</p>
+        <p>用固定 1 万元作计提基数，只估算 510300 本季的这两项，不是实际扣款：旧费率用 52 天，新费率用 40 天，2024 年有 366 天。10,000 ×（0.60% × 52 + 0.20% × 40）÷ 366 ≈ <strong>10.71 元</strong>。若把季末费率套满整个季度，就会算成约 5.03 元。真实基金的基数每天变，这道题只说明为什么要看生效日。更重要的是：管理费、托管费由基金财产承担，已计入公布的净值；不能从上面的 9,809 元再减 10.71 元。投资人另付给券商的交易佣金则不是基金运作费。</p>
+        <p>所以开头那笔模拟换仓，我会<strong>先不换</strong>。七元是过去一季每万元的净值回报差，不是下个季度换仓就有七元可拿。要比较长期贴合程度，应再找多个同期窗口、同一计算口径；即便决定换，卖旧、买新还各有一次要面对的报价。这两笔报价不在季度净值表里。</p>
+
+        <h2>把屏幕上能成交的价，放到另一本账</h2>
+        <p>下面<strong>单独造一只 ETF 和一组人民币买卖盘</strong>，不是上述两只基金的历史行情，也不用它们的季末净值。纸面规则是：买价不能比当时每份净值高出 0.10% 以上。假定在买入时刻能准确知道同步的每份净值为 4.000 元；最优买价 4.008，最优卖价 4.012，两边都有足量。你若想立即买 1,000 份，要接对方的<strong>卖价</strong>。此时按规则该成交还是等待？先写下决定，别拿后来的卖价替当时做决定。</p>
+        <p>一份基金资产值多少钱，和市场上愿意出多少钱，是两个问题。按成交价衡量，<strong>折溢价率 =（成交价 − 同时点每份净值）÷ 同时点每份净值</strong>。4.012 相对于 4.000 贵 0.30%，叫溢价；反过来低于净值就叫折价。这笔买入最多接受 4.004 元，因此我等。真实交易中，正式净值通常收盘后才有，盘中参考净值是估算，不保证能按它成交；不能用昨收净值冒充此刻的准确价值。</p>
+        <p>同一张盘口还有另一段距离：<strong>买卖价差 = 最优卖价 − 最优买价</strong>，这里是 4.012 − 4.008 = 0.004 元/份。中点是 4.010，买入成交比中点贵 0.002；中点本身又比净值贵 0.010。两者加起来才是成交比净值贵的 0.012。价差不是折溢价，也不是券商另开的一张收费单。</p>
+        <table>
+          <caption>若不顾上限真的按报价交易｜同一虚构 ETF，不同交易日，单位：元/份</caption>
+          <thead><tr><th scope="col">时点</th><th scope="col">同步净值</th><th scope="col">最优买价</th><th scope="col">最优卖价</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">买入日</th><td>4.000</td><td>4.008</td><td><strong>4.012</strong></td></tr>
+            <tr><th scope="row">后来卖出日</th><td>4.040</td><td><strong>4.034</strong></td><td>4.038</td></tr>
+          </tbody>
+        </table>
+        <p>后一行是独立设定的后来情景，不是买入时的信息。两次各成交 1,000 份，假设佣金每笔 1 元，不计其他税费、期间分红和现金利息。买入实付 4.012 × 1,000 + 1 = <strong>4,013 元</strong>；后来立即卖出要接对方买价，收到 4.034 × 1,000 − 1 = <strong>4,033 元</strong>。实得 20 元，除以实付 4,013 元，回报约 0.50%。同期按净值看却涨了（4.040 − 4.000）÷ 4.000 = 1%。</p>
+        <figure class="lesson-figure">
+          <svg viewBox="0 0 320 232" role="img" aria-labelledby="bridge-title bridge-desc">
+            <title id="bridge-title">从持有净值多出的四十元，对到实际多出的二十元</title>
+            <desc id="bridge-desc">净值变动收益四十元，扣除买入溢价十二元剩二十八，扣除卖出折价六元剩二十二，扣两笔佣金共两元，余二十。价差已包含在使用的成交价中。</desc>
+            <text x="8" y="22">从净值到账户｜1,000 份，人民币元</text>
+            <g fill="none" stroke="var(--rule)" stroke-dasharray="3 3"><path d="M152 39v164m136-164v164"/></g>
+            <text x="8" y="56">净值多了</text><rect x="152" y="44" width="136" height="12" fill="var(--accent)"/><text x="313" y="56" text-anchor="end">40</text>
+            <text x="8" y="99">买贵了 12</text><rect x="152" y="87" width="95.2" height="12" fill="var(--accent)"/><text x="313" y="99" text-anchor="end">28</text>
+            <text x="8" y="142">卖便宜了 6</text><rect x="152" y="130" width="74.8" height="12" fill="var(--accent)"/><text x="313" y="142" text-anchor="end">22</text>
+            <text x="8" y="185">两次佣金共 2</text><rect x="152" y="173" width="68" height="12" fill="var(--accent)"/><text x="313" y="185" text-anchor="end">20</text>
+            <path d="M152 203H288" fill="none" stroke="currentColor"/><text x="152" y="224" text-anchor="middle">0</text><text x="288" y="224" text-anchor="middle">40</text>
+          </svg>
+          <figcaption>从买入日到后来卖出日，按 1,000 份、无分红的模拟账往下读：每一横条是修正后还剩的利润，不是四笔可以相加的收入。两端都用可成交的一档报价；没有把价差或基金管理费再扣一遍。</figcaption>
+        </figure>
+        <p>两笔交易用的是成交价，所以已经承担了入场多付的 12 元，以及出场少收的（4.040 − 4.034）× 1,000 = 6 元。其中都包含相对于中点的半个价差。可以像图里那样从净值变动逐步对到成交，也可以直接用现金实收减实付；<strong>选一条路算到头</strong>，不能两条路同时扣。</p>
+
+        <h2>下班三分钟：只让买入时的溢价消退</h2>
+        <p>重置上面那笔纸面交易。只改买入时市场对同一篮子资产的报价水平：买卖双方报价同时下移 0.010 元，变成 <strong>3.998 / 4.002</strong>。初始净值仍是 4.000，价差仍为 0.004。其余条件，包括后来那行卖出报价，一律不动。现在是否通过“买价至多高出净值 0.10%”这条线？先选，再按两次现金收付重算结果。</p>
+        <details><summary>展开核对：哪笔钱变了，哪笔钱没变？</summary>
+          <p>新卖价 4.002 比 4.000 高 0.002，溢价只有 <strong>0.05%</strong>，通过这条线，我可以接受该模拟买价。两边的价差没变，中点已从 4.010 回到 4.000，所以即使两次面对同样宽的价差，也能有不同的进场代价。</p>
+          <p>买入实付 4,002 + 1 = 4,003 元；按设定后来卖出仍净收 4,033 元，净赚 <strong>30 元</strong>，约为实付的 0.75%。也可对账为净值多 40 − 买贵 2 − 卖便宜 6 − 佣金 2 = 30 元。多出来的 10 元全来自进场报价，不是基金经理多赚了钱。通过买价约束不等于预知将获利；现实中的退出价仍未知。</p>
+          <p>翻一笔旧 ETF 交易，先找下单前已出的报告，记下基准全名、期间、净值表现；再找自己的成交和佣金。若缺当时的盘口或同步净值估计，写“无法还原溢价”，别拿一季的跟踪差异填那个空。</p>
+        </details>
+      </div>
+    </article>
+  </main>
+  <footer class="wrap"><a rel="prev" href="33.html">上一课：33 第一次拆读 ETF 资料页</a><a href="../index.html#u06">单元目录</a><a rel="next" href="35.html">下一课：35 做空怎样获利，又怎样亏到超过初始投入？</a></footer>
+</body>
+</html>

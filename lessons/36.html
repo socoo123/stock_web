@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="沿着一张合约的现金和股票流向，分清看涨、看跌的买卖双方；算清为什么行权值得，整笔交易却仍可能亏钱。">
+  <title>第 36 课｜期权是一项权利，还是一项义务？｜小白的股票投资启蒙课</title>
+  <link rel="icon" type="image/svg+xml" href="../dollar.svg">
+  <link rel="stylesheet" href="../reading.css?v=4">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header><div class="wrap topbar">
+    <a class="brand" href="../index.html"><img src="../dollar.svg" width="28" height="28" alt="">小白的股票投资启蒙课</a>
+    <nav aria-label="课程导航"><a href="../index.html#u06">课程目录</a></nav>
+  </div></header>
+  <main id="main" class="wrap">
+    <article class="reading-page" aria-labelledby="lesson-title">
+      <div class="margin-note"><p>第六单元</p><small>第 36 课</small></div>
+      <div class="prose">
+        <h1 id="lesson-title">期权是一项权利，还是一项义务？</h1>
+        <p>唐宁在模拟账本上给自己留了 5,000 美元。她要等 30 天才决定要不要买某只股票的 100 股。它今天每股 50 美元，她怕到时涨得买不起，也怕自己改了主意却非买不可。为了既锁住买价、又能说“不买”，她另外最多肯花 300 美元。</p>
+        <p>纸上有两个提议：甲，<strong>付 300 美元，买一张看涨期权</strong>；乙，<strong>收 200 美元，卖出一张看跌期权</strong>。约定的股票买卖价都是每股 50 美元。选甲、选乙，还是都不签？先写下一句话：如果第 30 天唐宁不想买了，谁能决定让这 100 股成交？</p>
+
+        <h2>先把两种价格写在不同的格子里</h2>
+        <p>这是一只<strong>虚构的美元股</strong>。两张合约的标的都是它，今天是第 0 天，第 30 天是<strong>到期日</strong>。每张对应 100 股；我们只算签约后持有到期的账，按到期时的股票市价衡量交割的得失，不计税费、分红和利息。并非所有期权都只有 30 天、每张都对应 100 股，或都要等到最后一天才能行权。</p>
+        <p><strong>行权价</strong>（也叫执行价，常写作 K）是依约买卖<strong>股票</strong>的价格。本例 K 都是 50 美元/股，行权时交割 100 股，对应 5,000 美元。<strong>权利金</strong>是今天买<strong>选择权</strong>的钱。看涨报 3 美元/股，一张付 3 × 100 = 300 美元；看跌报 2 美元/股，一张付 200 美元。它不是订金：不用合约也不退；用合约也不能从那 5,000 美元里抵掉它。</p>
+        <p><strong>公开资料和题设分开：</strong>美国证监会（SEC）投资者教育公告<a href="https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-63" lang="en">An Introduction to Options</a>（2015 年 3 月 18 日发布，2026 年 7 月 16 日更新）在 “Basic Options Terminology” 下用 “Call and Put”“Exercise”“Assignment” 解释约定的买卖方向、行权和卖方被指派履约。它讲的是美国上市股票期权的基础，不是这只虚构股票的报价单。下文的日期间隔、价格和交割数量都是题设。</p>
+
+        <h2>“买期权”不一定是买股票</h2>
+        <p>先看谁买了<strong>合约</strong>：付钱的一方拿到选择，收钱立约的一方承诺配合。再看合约让买方选择做什么：看涨（call）让买方选要不要<strong>买进股票</strong>；看跌（put）让买方选要不要<strong>卖出股票</strong>。行使这个选择叫行权。这里说的“卖方”是立约承担义务的人，不是把自己先前买来的权利转让出去的人。</p>
+        <table>
+          <caption>每张合约对应 100 股｜前两行是一张看涨的双方，后两行是一张看跌的双方；两种报价独立设定，不是一组可同时成交的市场报价。</caption>
+          <thead><tr><th scope="col">角色</th><th scope="col">今天的权利金</th><th scope="col">到期时，谁说了算？</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">买看涨</th><td>付 300 美元</td><td>可付 5,000 美元买进 100 股，也可不用。</td></tr>
+            <tr><th scope="row">卖看涨</th><td>收 300 美元</td><td>若被指派，须收 5,000 美元、交出 100 股。</td></tr>
+            <tr><th scope="row">买看跌</th><td>付 200 美元</td><td>可交出 100 股卖得 5,000 美元，也可不用。</td></tr>
+            <tr><th scope="row">卖看跌</th><td>收 200 美元</td><td>若被指派，须付 5,000 美元、接下 100 股。</td></tr>
+          </tbody>
+        </table>
+        <figure class="lesson-figure">
+          <svg viewBox="0 0 320 265" role="img" aria-labelledby="flow-title flow-desc">
+            <title id="flow-title">一张看涨或看跌合约里，钱和股票分别交给谁？</title>
+            <desc id="flow-desc">左侧是期权买方，右侧是立约卖方。今天权利金总从买方流向卖方。到期若看涨行权，买方付五千美元并收一百股；若看跌行权，买方交一百股并收五千美元。两组行权箭头是两种不同合约。</desc>
+            <text x="8" y="18">买方（有选择）</text><text x="312" y="18" text-anchor="end">立约卖方（须履约）</text>
+            <g fill="none" stroke="var(--muted)" stroke-dasharray="3 4"><path d="M36 29V254 M284 29V254"/></g>
+            <text x="160" y="50" text-anchor="middle">今天：看涨付 300，看跌付 200</text>
+            <g fill="none" stroke="var(--accent)" stroke-width="2"><path d="M36 63H284l-8 -4m8 4-8 4"/></g>
+            <text x="160" y="96" text-anchor="middle">看涨行权：5,000 美元</text>
+            <g fill="none" stroke="currentColor" stroke-width="2"><path d="M36 108H284l-8 -4m8 4-8 4"/></g>
+            <text x="160" y="134" text-anchor="middle">100 股股票</text>
+            <g fill="none" stroke="currentColor" stroke-width="2"><path d="M284 146H36l8 -4m-8 4 8 4"/></g>
+            <path d="M56 163H264" fill="none" stroke="var(--rule)"/>
+            <text x="160" y="186" text-anchor="middle">看跌行权：100 股股票</text>
+            <g fill="none" stroke="currentColor" stroke-width="2"><path d="M36 198H284l-8 -4m8 4-8 4"/></g>
+            <text x="160" y="225" text-anchor="middle">5,000 美元</text>
+            <g fill="none" stroke="currentColor" stroke-width="2"><path d="M284 238H36l8 -4m-8 4 8 4"/></g>
+          </svg>
+          <figcaption>顺箭头找收款或收股的一方。最上面是第 0 天的权利金，单位为美元/张。下面二选一，只读所选合约第 30 天行权时的两支箭头。若到期不用，下面两支箭头都不发生，最上面那笔也不会倒流。</figcaption>
+        </figure>
+        <p>回到唐宁，我选甲。到期如果股票已涨到 60 美元，她仍能用 5,000 美元拿到 100 股；如果不想持有，她没有必须买的义务。乙恰好把决定权交给了别人：涨到 60 时，对方何必要按 50 卖给她？跌到 40 时，对方若按 50 卖，她反而不能因为改变主意而拒收。收 200 美元不是有人付钱替她保留选择，是她收钱把选择给了别人。</p>
+
+        <h2>行权划算，这笔交易就赚了吗？</h2>
+        <p>把时钟拨到第 30 天，假设市价 <strong>52 美元/股</strong>。对看涨买方，按 50 买到市价 52 的股票，每股便宜 2 美元，这一张权利值 200 美元。若不用它，最初花的 300 美元就全没了；用它，整笔账是 <strong>（52 − 50 − 3）× 100 = −100 美元</strong>。行权比白白过期好 200 美元，却没把买权利的钱全挣回来。看涨立约卖方只算这张合约则是收 300、让出 200 的价差，净得 100 美元。</p>
+        <p>重置账本，换<strong>看跌</strong>，假设到期市价 <strong>49 美元/股</strong>。买方按 50 而不是 49 卖出 100 股，多收 100 美元；扣掉权利金 200，这张看跌仍净亏 100。卖方则是收了 200，按约接下的股票比所付价款少值 100，净得 100。若买方原本就持有股票，股票本身的涨跌另记，不要混进这张期权的损益。对本例买方，<strong>到期</strong>看涨要到每股 53 美元才回本，看跌要跌到 48 才回本；50 是行权价，不是回本点。</p>
+        <p>对卖方，两笔都“先收到钱”，风险却不同。若没有股票去交割，一张看涨卖方在到期市价 100 时，要用 10,000 美元才能买齐市值这么高的 100 股，却只能收 5,000；计入最初的 300，净亏 4,700 美元。股价再涨，亏损还会扩大，没有固定上限。看跌卖方遇到股票跌到零，仍可能要付 5,000，扣掉原先收的 200，单张最多亏 4,800 美元（普通股价格不低于零）。而单独买入期权的一方最多亏掉付出的权利金。<strong>先收钱还是先付钱，和这笔钱能不能盖住最坏结果，是两件事。</strong></p>
+
+        <h2>下班三分钟：少了 100 美元，她还签吗？</h2>
+        <p>只改开头一个条件：唐宁今天肯花在这项选择权上的上限，由 300 美元降到 <strong>200 美元</strong>。5,000 美元的买股预算、100 股的目标、两张合约的报价都不变；她还是想保住 50 的买价，又保留不买的自由。她该维持原选、换成看跌，还是暂时不签？先写谁能要求谁交割，再写什么变化能让她重新考虑。找一笔你原以为“只是等便宜再买”的旧交易，也问一次：到时我还有没有拒绝的权利？</p>
+        <details><summary>写完再展开：便宜的合约能不能顶替贵的？</summary>
+          <p>唐宁从买一张看涨改为暂不签。她需要的是按 50 <strong>买</strong>的选择权，现在却只能花 200，一张仍要 300。买看跌虽然只花 200，拿到的是按 50 <strong>卖</strong>的权利；卖看跌虽能收到 200，得到的却是可能非买不可的义务。两种都没替她锁住想要的买价。</p>
+          <p>如果以后出现同样交割 100 股、同样行权价、仍覆盖所需日期的看涨，整张权利金不超过 200，她才有重新比较的理由。暂时不签有代价：若以后股价涨了，她并没有那张能按 50 买股的合约。本题只需写清愿意放弃哪一样，不需要开通任何证券服务。</p>
+        </details>
+      </div>
+    </article>
+  </main>
+  <footer class="wrap"><a rel="prev" href="35.html">上一课：35 做空怎样获利，又怎样亏到超过初始投入？</a><a href="../index.html#u06">单元目录</a><a rel="next" href="37.html">下一课：37 方向猜对了，期权为什么仍亏？</a></footer>
+</body>
+</html>
