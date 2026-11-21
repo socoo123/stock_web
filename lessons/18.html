@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="把五个交易日的开高低收合并成周线。分别算周五相对周四、本周相对上周的价格变化，再检验周线藏掉了什么。">
+  <title>第 18 课｜同一只股票，日线涨、周线跌，矛盾吗？｜小白的股票投资启蒙课</title>
+  <link rel="icon" type="image/svg+xml" href="../dollar.svg">
+  <link rel="stylesheet" href="../reading.css?v=4">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="../index.html"><img src="../dollar.svg" width="28" height="28" alt="">小白的股票投资启蒙课</a>
+      <nav aria-label="课程导航"><a href="../index.html#u04">课程目录</a></nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <article class="reading-page" aria-labelledby="lesson-title">
+      <div class="margin-note"><p>第四单元</p><small>第 18 课</small></div>
+      <div class="prose">
+        <h1 id="lesson-title">同一只股票，日线涨、周线跌，矛盾吗？</h1>
+        <p>上周五你留了张纸条：“下周收盘如果比今天低了 3% 或更多，就翻一次公司公告，看有没有要重算的地方。”本周五收盘，有人提醒你：“今天刚涨了，纸条可以扔了吧？”先不要扔。把两句话各改写成“从＿＿时的＿＿元，到＿＿时的＿＿元”，看它们说的是不是同一段路。</p>
+        <p><strong>教学设定：</strong>沿用上一课的主例，不用练习里的替代前收。这是一只虚构的人民币股票，上周五收在 <strong>10.40 元/股</strong>，本周一至周五都有交易。表中是五天已经结束后的原始四价，不是五份预测。期间没有分红、拆股等公司行动，不计税费；只讨论价格，不假定你能买卖在这些点上。</p>
+        <table>
+          <caption>周五收盘时拿到的五张日行情｜单位：人民币元/股</caption>
+          <thead><tr><th scope="col">交易日</th><th scope="col">开盘</th><th scope="col">最高</th><th scope="col">最低</th><th scope="col">收盘</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">周一</th><td>10.30</td><td>10.50</td><td>10.05</td><td>10.20</td></tr>
+            <tr><th scope="row">周二</th><td>10.18</td><td>10.60</td><td>10.08</td><td>10.35</td></tr>
+            <tr><th scope="row">周三</th><td>10.30</td><td>10.38</td><td>9.70</td><td>9.80</td></tr>
+            <tr><th scope="row">周四</th><td>9.82</td><td>10.04</td><td>9.65</td><td>9.90</td></tr>
+            <tr><th scope="row">周五</th><td>9.60</td><td>10.10</td><td>9.50</td><td>10.00</td></tr>
+          </tbody>
+        </table>
+
+        <h2>把五天装进一根周线，不是求五天平均</h2>
+        <p>在第一行圈<strong>开盘</strong>，得到周开 10.30；在最后一行圈<strong>收盘</strong>，得到周收 10.00。中间两列不能这么取：在五个最高价里找最大的，周二的 <strong>10.60</strong> 才是周高；在五个最低价里找最小的，周五的 <strong>9.50</strong> 才是周低。比如周二只收在 10.35，若只留下每天收盘的折线，就会漏掉表里那笔 10.60 元的高价。上周五的 10.40 不属于本周，画周线时不用它。</p>
+        <figure class="lesson-figure">
+          <svg viewBox="0 0 320 210" role="img" aria-labelledby="week-title" aria-describedby="week-desc">
+            <title id="week-title">五根日行情合成一根周行情</title>
+            <desc id="week-desc">各竖线表示该日或该周的最低到最高；竖线左边的短横是开盘，右边的短横是收盘。五天最高点来自周二，最低点来自周五。最右边周线的左横来自周一开盘 10.30，右横来自周五收盘 10.00。</desc>
+            <text x="4" y="18">价格（元/股）</text><text x="315" y="18" text-anchor="end">左横＝开，右横＝收</text>
+            <g text-anchor="end"><text x="43" y="55">10.60</text><text x="43" y="85">10.30</text><text x="43" y="115">10.00</text><text x="43" y="165">9.50</text></g>
+            <path d="M49 50H310M49 80H310M49 110H310M49 160H310" stroke="var(--rule)" fill="none"/>
+            <path d="M64 60V105M55 80H64M64 90H73 M103 50V102M94 92H103M103 75H112 M142 72V140M133 80H142M142 130H151 M181 106V145M172 128H181M181 120H190 M220 100V160M211 150H220M220 110H229" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M253 42V172" stroke="var(--muted)" stroke-dasharray="3 4"/>
+            <path d="M289 50V160M277 80H289M289 110H301" fill="none" stroke="var(--accent)" stroke-width="3.5"/>
+            <g text-anchor="middle"><text x="64" y="192">一</text><text x="103" y="192">二</text><text x="142" y="192">三</text><text x="181" y="192">四</text><text x="220" y="192">五</text><text x="289" y="192">全周</text></g>
+          </svg>
+          <figcaption>横向从周一读到周五；虚线右边不是第六天，而是左边五天合成的一周。沿 10.60 和 9.50 两条水平线看，周线两端分别碰到哪一天？再沿周线左右短横往回找，起终点分别只取了哪一天的哪一价？纵轴共用同一把价格尺。</figcaption>
+        </figure>
+        <p>因此本周的四个价，按“开、高、低、收”的顺序写是 <strong>10.30、10.60、9.50、10.00</strong>。这里的周一和周五是本例实际有交易的首日、末日，碰到假期应按当周实际交易日取数。可对照行情图服务商 <a href="https://help.stockcharts.com/data-and-ticker-symbols/data-availability/data-bar-periods">StockCharts 的《Data Bar Periods》</a>（原页未标发布日期，2026 年 11 月 21 日查阅）：找 <span lang="en">Weekly Open</span> 起的四行，分别说明首日开、各日最高之最高、各日最低之最低、末日收。这是它的制图说明，不是这只虚构股票的数据来源。</p>
+
+        <h2>同到 10.00 元，分别从哪天来？</h2>
+        <p><strong>周五相对周四：</strong>从 9.90 到 10.00，(10.00 − 9.90) ÷ 9.90 ≈ <strong>+1.01%</strong>。<strong>本周五相对上周五：</strong>从 10.40 到 10.00，(10.00 − 10.40) ÷ 10.40 ≈ <strong>−3.85%</strong>。周四收盘时已经比上周末少了 0.50 元，最后一天只涨回 0.10 元，周末仍少 0.40 元。这两句话可以在同一张收盘周报里并排成立。</p>
+        <p>纸条用的是第二个分母。少 3% 的分界是 10.40 × 0.97 = <strong>10.088 元</strong>，实际周收 10.00 已低于分界，<strong>照约定去读公告</strong>。这只是复查门槛，不是因果判断；数字本身没告诉你公司发了利空，更没规定你该卖。</p>
+        <p>还有一种貌似相近的说法：“周 K 线收阴，所以周跌幅就是实体的长度。”前半句没错，周收 10.00 低于周开 10.30；但相对<strong>周开</strong>的变化是 (10.00 − 10.30) ÷ 10.30 ≈ <strong>−2.91%</strong>，连 3% 都没到。它漏掉了上周五收盘至本周一开盘的 0.10 元。如果拿它替换纸条的周收对周收，连行动都会选反。</p>
+
+        <h2>今天该看哪张图？让问题选窗口</h2>
+        <p>如果你只关心从上周五一直持到本周五的一股值多少钱，两次周收盘价够用了。如果你想知道“周三收盘时，10 元这道线已经失守了吗”，周线的最低 9.50 只能证明一周内某个时点到过它，回答不了<strong>哪天收在</strong>哪里。翻回日表才能答：周三收在 9.80 元。即便如此，周三是在上午还是下午第一次跌到 10 元以下？日表也不够，要找带时刻的成交记录。</p>
+        <p>回到当时：若你是周三收盘做决定，那时只能拿前三行。临时周线的开、高、低、最新收分别是 10.30、10.60、9.70、9.80；本周剩下的两个收盘价仍是空白。周五回看时图上标着的“周收 10.00、周低 9.50”，不能倒填为周三就知道的证据。</p>
+
+        <h2>下班三分钟：只改周四收盘，周线要重画吗？</h2>
+        <p>在副本里只把<strong>周四的收盘</strong>从 9.90 改成 <strong>10.02 元</strong>（仍在当天 9.65 到 10.04 之间），其他格子和上周五的 10.40 全不动。现在要交两样东西：一句日报“周五相对周四收盘上涨”，一张“周跌至少 3% 要复查”的纸条。你会保留哪一项，改写哪一项？用笔圈出判断各自用到的两格，再展开答案。</p>
+        <details><summary>展开对照：两份不同的日报，可以有同一根周线</summary>
+          <p><strong>改日报，留纸条。</strong>10.00 − 10.02 = −0.02，除以 10.02 约 <strong>−0.20%</strong>，日报应改成“周五相对周四收盘下跌”。周五从 9.60 开到 10.00，自己的实体仍是阳线。周开 10.30、周高 10.60、周低 9.50、周收 10.00 一笔都没变；相对上周五仍跌约 3.85%，照原定条件复查。把两份日表都折到只剩周线，连最后一天到底比前一天涨还是跌都分辨不了。</p>
+          <p>回看一次自己的周中交易：把理由中引用的数字标成“当时已收盘”或“当周后来才定”。如果只有一根后来画完的周线，把那项依据划掉，看看自己还剩下什么理由。</p>
+        </details>
+      </div>
+    </article>
+  </main>
+  <footer class="wrap"><a rel="prev" href="17.html">上一课：17 四价与 K 线</a><a href="../index.html#u04">单元目录</a><a rel="next" href="19.html">下一课：19 成交量与买盘</a></footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="用一只虚构股票的周五四价画日 K 线，分清相对今开和相对前收的涨幅，再用两条走法检验图上看不出来的事。">
+  <title>第 17 课｜用四个价格画一根 K 线｜小白的股票投资启蒙课</title>
+  <link rel="icon" type="image/svg+xml" href="../dollar.svg">
+  <link rel="stylesheet" href="../reading.css?v=4">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="../index.html"><img src="../dollar.svg" width="28" height="28" alt="">小白的股票投资启蒙课</a>
+      <nav aria-label="课程导航"><a href="../index.html#u04">课程目录</a></nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <article class="reading-page" aria-labelledby="lesson-title">
+      <div class="margin-note"><p>第四单元</p><small>第 17 课</small></div>
+      <div class="prose">
+        <h1 id="lesson-title">用四个价格画一根 K 线</h1>
+        <p>周五收盘，朋友发来一张截图：“从开盘算，今天涨了四个多点。”你周四收盘时手里已有这只股票，全天没动。你在周记里也该填“今天涨了 4% 多”吗？你事先写下的筛选条件是：<strong>周五收盘比周四收盘高，才留在周末复查名单</strong>。先决定留不留，再决定周记里的涨幅填多少。这只是挑出要复查的股票，不是买入指令。</p>
+        <p><strong>教学设定：</strong>这节和下一节用同一只虚构股票。上周五收 10.40 元，本周四收 9.90 元；本周五的开盘、最高、最低、收盘依次是 <strong>9.60、10.10、9.50、10.00 元/股</strong>。都是人民币原始行情，这段时间没有拆股、分红等公司行动，不计税费。我们的材料只到本周五收盘，没有逐笔成交记录。</p>
+
+        <h2>先画今天，再把昨天放进来</h2>
+        <p>找一张方格纸，竖着标价格，越往上越贵。把今天开盘的 9.60 和收盘的 10.00 标出来，以这两条水平线为底和顶画一个方框，这段叫<strong>实体</strong>。从框顶伸一根细线到 10.10，从框底伸一根细线到 9.50，这两截是<strong>上影线、下影线</strong>。画到这里，日 K 线已经完成了，根本没用到昨天的数。</p>
+        <figure class="lesson-figure">
+          <svg viewBox="0 0 320 230" role="img" aria-labelledby="candle-title" aria-describedby="candle-desc">
+            <title id="candle-title">本周五的一根日 K 线，以及不属于它的前收参考线</title>
+            <desc id="candle-desc">纵轴为人民币元每股。实体下边是开盘 9.60，上边是收盘 10.00；上影线到最高 10.10，下影线到最低 9.50。横虚线位于 9.90，表示前一日收盘，不是周五的开盘。</desc>
+            <text x="10" y="19">价格（元/股）</text><text x="310" y="19" text-anchor="end">本周五 · 日线</text>
+            <path d="M62 40V206M57 44H67M57 70H67M57 96H67M57 174H67M57 200H67" stroke="currentColor" fill="none"/>
+            <g text-anchor="end"><text x="51" y="49">10.10</text><text x="51" y="75">10.00</text><text x="51" y="101">9.90</text><text x="51" y="179">9.60</text><text x="51" y="205">9.50</text></g>
+            <path d="M85 96H309" stroke="var(--muted)" stroke-dasharray="4 4"/>
+            <path d="M131 44V70M131 174V200" stroke="currentColor" stroke-width="2"/>
+            <rect x="113" y="70" width="36" height="104" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M132 44H168M150 70H168M150 174H168M132 200H168" stroke="var(--muted)" fill="none"/>
+            <text x="175" y="49">最高 10.10</text><text x="175" y="75">收盘 10.00</text><text x="175" y="116">虚线：周四收 9.90</text><text x="175" y="179">开盘 9.60</text><text x="175" y="205">最低 9.50</text>
+          </svg>
+          <figcaption>先沿实体自下而上读开盘到收盘：走高 0.40 元；再从虚线读到实体上沿：只高 0.10 元。纵轴每 0.10 元的距离相同。影线的长度表示相差多少钱，不表示在那里停了多久。</figcaption>
+        </figure>
+        <p>这根是阳线，因为收盘高于开盘。若收盘低于开盘，实体上沿才是开盘、下沿才是收盘；若两价相等，实体就压成一条横线。先认价格和图例，不必靠红绿猜。画法可核对深交所投教中心 <a href="https://www.szse.cn/www/investor/warning/t20190613_567791.html">2019 年 6 月 13 日《多与空的战争》第 3 问「如何认识 K 线图？」</a>，那里分别说明了实体、影线和判断阴阳的两个价。</p>
+
+        <h2>同一个收盘价，分别从哪一站出发？</h2>
+        <table>
+          <caption>本周五收盘后的两笔价格账｜起点、终点均为人民币元/股</caption>
+          <thead><tr><th scope="col">比较区间</th><th scope="col">每股变化</th><th scope="col">变化 ÷ 起点</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">今开到今收</th><td>10.00 − 9.60 = +0.40</td><td>0.40 ÷ 9.60 ≈ <strong>+4.17%</strong></td></tr>
+            <tr><th scope="row">前收到今收</th><td>10.00 − 9.90 = +0.10</td><td>0.10 ÷ 9.90 ≈ <strong>+1.01%</strong></td></tr>
+          </tbody>
+        </table>
+        <p>差额去哪儿了？周四收在 9.90，周五却从 9.60 起步，开盘先比前收低了 0.30 元。今天从开到收走高的 0.40 元，头 0.30 元只是把这段差额补回来，剩下的 0.10 元才高过前收。<strong>每股的元数可以接起来：−0.30 + 0.40 = +0.10；分母不同的百分数不能照这样相加。</strong></p>
+        <p>如果你周四收盘已有 1,000 股，两个收盘时点的持仓市值是 9,900 元和 10,000 元，差 <strong>+100 元</strong>，不是 +400 元。期间没卖，这 100 元不是到账现金，也不是从你最初买入算起的全部盈亏。对周记，填“相对前收 +1.01%”；对筛选条件，<strong>保留复查</strong>，因为 10.00 确实高过 9.90。至于公司的生意是否变好，四个价一个也没回答。</p>
+
+        <h2>只看这一根，能断定是「先下探再回升」吗？</h2>
+        <p>下面是两份可能的<strong>日内走法</strong>，不是又找到了两张真实分时图。只列开收盘和两笔中间成交，假定其余成交不超出高低点：</p>
+        <table>
+          <caption>同一组周五四价的两种顺序｜人民币元/股，时刻为教学设定</caption>
+          <thead><tr><th scope="col">走法</th><th scope="col">开盘</th><th scope="col">10:00</th><th scope="col">13:30</th><th scope="col">收盘</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">甲</th><td>9.60</td><td>9.50</td><td>10.10</td><td>10.00</td></tr>
+            <tr><th scope="row">乙</th><td>9.60</td><td>10.10</td><td>9.50</td><td>10.00</td></tr>
+          </tbody>
+        </table>
+        <p>再假定两种走法都只触及最高价、最低价各一次。甲先见低点，乙先见高点；抹去时刻，按刚才的画法，两张纸上的 K 线完全一样。如果你的观察条件是“见到 9.50 <strong>之后</strong>，当天又到过 10.10”，甲满足，乙不满足。拿着一根日线，就该把这一栏记为<strong>无法判定</strong>，而不是选一个听起来顺耳的故事。就算拿到了带时刻的成交，知道某个价有人做过交易，也不等于你有 1,000 股就能全卖在那个价。</p>
+
+        <h2>下班三分钟：只把前收换成 10.20 元</h2>
+        <p>另取一张纸做反例：<strong>只假设周四收在 10.20 元</strong>，周五四价、持仓股数和复查条件全不变。这不是订正前面的行情；主例和下一课里的周四仍收 9.90 元。你会保留还是划掉它？周五这根还是阳线吗？把两个起点和 1,000 股两个收盘间的市值差写下来，再展开。</p>
+        <details><summary>展开对账：阳线不变，哪一个决定变了？</summary>
+          <p><strong>划掉，不列入这次复查。</strong>实体仍由 9.60 到 10.00，相对今开仍是 +4.17%，阳线一笔都不用改。前收参考线却从实体中间移到了周五最高价之上：10.00 − 10.20 = −0.20 元/股，除以 10.20 约 <strong>−1.96%</strong>；1,000 股市值少了 200 元。这就是“收阳，仍比昨收跌”。</p>
+          <p>翻出自己一张写过“今天涨了”的截图，在“涨了”后面补上“相对哪一天的哪一个价”。如果原图没有起点，就先找那天的行情明细，别用颜色替自己补数。</p>
+        </details>
+      </div>
+    </article>
+  </main>
+  <footer class="wrap"><a rel="prev" href="16.html">上一课：16 核对交割单</a><a href="../index.html#u04">单元目录</a><a rel="next" href="18.html">下一课：18 日线与周线</a></footer>
+</body>
+</html>
