@@ -1,10 +1,10 @@
 # 《小白的股票投资启蒙课》接力记录
 
-**下次输入：`/stock-next U09`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
+**下次输入：`/stock-next U10`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
 
-- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)、[第三单元 11–16 课](https://socoo123.github.io/stock_web/#u03)、[第四单元 17–21 课](https://socoo123.github.io/stock_web/#u04)、[第五单元 22–31 课](https://socoo123.github.io/stock_web/#u05)、[第六单元 32–37 课](https://socoo123.github.io/stock_web/#u06)、[第七单元 38–43 课](https://socoo123.github.io/stock_web/#u07)、[第八单元 44–48 课](https://socoo123.github.io/stock_web/#u08)。
-- 已上线正文：**48 / 66**。U08 [Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44914339186)，44–48 课线上均返回 HTTP 200。已核对五案决策日史料，复算追保、日经点位与学费、两家网商毛利与生存门槛、短债缺口、厚薄买盘。375px 下逐课查看图表并展开练习；在线从目录进入 47，展开续借题，翻到 48 并返回单元目录。
-- 当前批：**U09，49–53 课｜投资高手：学问题，而不抄答案**。五课均已产出并统稿；目录及 48–53 前后导航已接。待发布并在线核验，不再派发写作。
+- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)、[第三单元 11–16 课](https://socoo123.github.io/stock_web/#u03)、[第四单元 17–21 课](https://socoo123.github.io/stock_web/#u04)、[第五单元 22–31 课](https://socoo123.github.io/stock_web/#u05)、[第六单元 32–37 课](https://socoo123.github.io/stock_web/#u06)、[第七单元 38–43 课](https://socoo123.github.io/stock_web/#u07)、[第八单元 44–48 课](https://socoo123.github.io/stock_web/#u08)、[第九单元 49–53 课](https://socoo123.github.io/stock_web/#u09)。
+- 已上线正文：**53 / 66**。U09 [Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44915829643)，49–53 课线上均返回 HTTP 200，正文与核验稿一致。已对读五位作者的原文，复算清算折扣、业主可取现金、同店利润、增发后的每股收益和扣费后回报。375px 下逐课查看图表、展开练习；在线从目录进入 52，展开融资题，翻到 53 填写复核卡并返回单元目录。
+- 下一批：**U10，54–58 课｜量化不神秘：用表格就能开始**。按 54–55、56–58 分工，尚未派发。先约定价格路径、调仓时点、费用和可交易的比较方案，再逐期揭晓，不用结果倒改规则。U09 无待统稿或待发布文件。
 - 写作模型：`openai-codex/gpt-6.2-astra`；思考强度：`xhigh`。通用 `task` 子 Agent 已绑定模型角色 `@chapter_worker`，直接使用绑定，不再重复传 `model`。
 - 课程范围与题目：[PLAN.md](PLAN.md)；执行规程：[stock-next](.omp/commands/stock-next.md)。如果快捷指令没有加载，可直接发送「读取 COURSE_STATUS.md 和 .omp/commands/stock-next.md，执行记录中的下一批」。
 
@@ -22,7 +22,7 @@
 | U06 | 产品、ETF、做空与期权 | 3 | 32–34；35；36–37 | 32–37 均已上线 |
 | U07 | 利率、政治与外部冲击 | 3 | 38–40；41；42–43 | 38–43 均已上线 |
 | U08 | 五场历史实验 | 3 | 44–45；46–47；48 | 44–48 均已上线 |
-| U09 | 投资人的判断方法 | 3 | 49–50；51–52；53 | 49–53 已统稿，待发布并在线核验 |
+| U09 | 投资人的判断方法 | 3 | 49–50；51–52；53 | 49–53 均已上线 |
 | U10 | 用数据制定和检验规则 | 2 | 54–55；56–58 | 未开始 |
 | U11 | 普通人的投资安排 | 2 | 59–60；61–62 | 未开始 |
 | U12 | AI 研究与毕业练习 | 2 | 63–64；65–66 | 未开始 |
