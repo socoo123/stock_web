@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="用美元现金账户做一次纸上往返：区分零佣金、报价里的买卖价差、数量不足带来的滑点，以及根本没有发生的换汇。">
+  <title>第 15 课｜零佣金，为什么买完马上卖还可能亏？｜小白的股票投资启蒙课</title>
+  <link rel="icon" type="image/svg+xml" href="../dollar.svg">
+  <link rel="stylesheet" href="../reading.css?v=4">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="../index.html"><img src="../dollar.svg" width="28" height="28" alt="">小白的股票投资启蒙课</a>
+      <nav aria-label="课程导航"><a href="../index.html#u03">课程目录</a></nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <article class="reading-page" aria-labelledby="lesson-title">
+      <div class="margin-note"><p>第三单元</p><small>第 15 课</small></div>
+      <div class="prose">
+        <h1 id="lesson-title">零佣金，为什么买完马上卖还可能亏？</h1>
+        <p>模拟委托单上写着“佣金：0.00 美元”。你想用 100 股试一试：买进，立刻卖光，不等行情涨跌。如果要求账户一分钱也不能少，能不能点下第一笔？先别看股票叫什么，看愿意卖给你的人和愿意向你买的人，各报多少钱。</p>
+
+        <h2>不等股价动，钱也已经走了两条不同的路</h2>
+        <p>现在是 <strong>2024 年 6 月 17 日周一，纽约当地常规交易时段</strong>。另开一本独立的美股模拟账：一只纽交所上市普通股；现金账户空仓，已有 2,000.00 美元已交收现金。买一（最高买价）是 <strong>9.98 美元</strong>，卖一（最低卖价）是 <strong>10.02 美元</strong>，这两档各有 200 股。短时间内没有别人改价、撤单或抢先成交，只按所列报价撮合。这样买卖各 100 股，都不至于用光第一档。</p>
+        <p>你要<strong>立刻买到</strong>，找的是愿意卖的人，所以付卖一 10.02，不是付买一 9.98。要<strong>立刻卖掉</strong>，找的是愿意买的人，所以收买一 9.98，不是收卖一 10.02。两边报价的中点恰好是 10.00；它是很好的刻度，却没有人在那一档等你成交。</p>
+        <figure class="lesson-figure">
+          <svg viewBox="0 0 320 177" role="img" aria-labelledby="spread-title" aria-describedby="spread-desc">
+            <title id="spread-title">同一把报价尺，买入和卖出落在中点两侧</title>
+            <desc id="spread-desc">横轴为每股美元。中点是 10.00，买入向右到卖一 10.02，卖出向左到买一 9.98，两段各偏离中点 0.02 美元，加起来相差每股 0.04 美元。</desc>
+            <g text-anchor="middle"><text x="160" y="17">报价从低到高（美元／股）</text><text x="42" y="47">买一</text><text x="160" y="47">中点</text><text x="278" y="47">卖一</text><text x="42" y="68">9.98</text><text x="160" y="68">10.00</text><text x="278" y="68">10.02</text></g>
+            <path d="M28 83H292M42 78V88M160 78V88M278 78V88" fill="none" stroke="currentColor"/>
+            <path d="M160 89V159M42 89V159M278 89V116" fill="none" stroke="var(--rule)" stroke-dasharray="3 4"/>
+            <path d="M160 112H276l-6 -4m6 4 -6 4M160 154H44l6 -4m-6 4 6 4" fill="none" stroke="var(--accent)" stroke-width="2"/>
+            <text x="148" y="117" text-anchor="end">买进：多付 0.02</text><text x="172" y="159">卖掉：少收 0.02</text>
+          </svg>
+          <figcaption>沿横轴看同一时刻的报价，不是看一段时间里的跌幅。两支箭都从中点出发，分别标出着急成交的买方和卖方拿到的价格；每股 2 美分加 2 美分，正是两端的 4 美分。</figcaption>
+        </figure>
+        <p>这张模拟单约定买卖均零佣金，本次不向账户另收交易税费、平台费；美元进、美元出，没有换汇或出入金。只记这次已成交的收付，不计利息及个人所得税。这里的零是<strong>本单条件</strong>，不是美国股票交易一概没有费用。</p>
+        <table>
+          <caption>100 股立即往返｜按成交金额记账，单位：美元</caption>
+          <thead><tr><th scope="col">方向</th><th scope="col">股数 × 成交价</th><th scope="col">账户净收付</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">买进</th><td>100 × 10.02</td><td>−1,002.00</td></tr>
+            <tr><th scope="row">卖光</th><td>100 × 9.98</td><td>+998.00</td></tr>
+            <tr><th scope="row">往返</th><td>持仓又是 0 股</td><td><strong>−4.00</strong></td></tr>
+          </tbody>
+        </table>
+        <p>两笔都交收后，原来的 2,000 美元只剩 <strong>1,996 美元</strong>。也可从报价解释：买卖价差是 10.02 − 9.98 = 0.04 美元/股，100 股正好差 4 美元。前一个算法查钱，后一个解释钱为什么少，<strong>不是两项损失</strong>。如果现在的目标是一分钱也不能少，就不做这次立即往返；离开当下报价去等另一个价，已经是在承担新的价格风险。</p>
+        <p>能在这道题里当天卖，是因为一开始就用足额、已交收的现金付清。美国证监会（SEC）<a href="https://www.sec.gov/files/investor/alerts/cashaccounts.pdf#page=1">2011 年 1 月现金账户简报第 1 页例 A</a>专门列了这种情况，不要把它套到尚未付款的买单。那份旧简报里的交收天数也不能照抄：<a href="https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/new-t1-settlement-cycle-what-investors-need-know-investor-bulletin">SEC 2024 年 3 月 27 日简报的“What Will Change?”和“When Will ‘T+1’ start?”</a>说明，5 月 28 日起此类股票通常在成交后一个营业日交收。在本例中是 6 月 18 日，不是 17 日卖完便有这笔可提的现款。</p>
+
+        <h2>10.02 这张价签，能买够 100 股吗？</h2>
+        <p>把账本翻回买入前。你写下的条件是“要凑齐 100 股，最多付 1,003 美元”。原盘按 10.02 买足只付 1,002，符合条件。现在<strong>只改变卖一的数量</strong>：10.02 只剩 50 股，紧接着的 10.06 有足够多的卖单。买一仍有 200 股愿付 9.98。若选不设买价上限、立即拿足 100 股的委托，不能把首页的大号数字乘以 100 就算完事。</p>
+        <p>头 50 股付 50 × 10.02 = 501 美元，后 50 股付 50 × 10.06 = 503 美元，合计 <strong>1,004 美元，实际均价 10.04</strong>。这里约定滑点的比较基准为<strong>送出买单前一刻看到的卖一 10.02</strong>。和“100 股都按卖一”的预算相比，多付了 (10.04 − 10.02) × 100 = <strong>2 美元</strong>，这是买入的不利滑点。卖出仍全按送单前的买一，按同样口径卖出滑点为零。若另用中点作基准，买入偏离中点的 4 美分里已含半边价差，不能全叫作这里新增的滑点。</p>
+        <p>卖光收 998 美元，实际损失是 1,004 − 998 = <strong>6 美元</strong>：其中原来的价差解释 4 美元，买入深度不够解释另外 2 美元。对上了就停笔，不要在 6 后面再加 4 或加 2。现实中报价还可能在送单途中改变，也可能拿到比所见更好的价格；这是有意把其他变化拿掉的一次比较。</p>
+        <p>在 1,003 美元的硬上限下，我不会让这笔委托按 10.06 继续成交。按每股 10.03 做限价，100 股的成交货款不超过 1,003；但在新盘口只能先买 50 股。若“现在就要恰好 100 股”也不能退让，那就暂不下单，而不是把余下的 50 股提前记到持仓里。关于价格与成交的这组取舍，可对照 <a href="https://www.investor.gov/sites/default/files/trading101basics.pdf#page=1">SEC《Trading Basics》（2011 年 3 月），第 1 页 Market Order 的两个例子及 Limit Order 一段</a>。</p>
+
+        <h2>旧交易怎么查：哪一项是真扣款，哪一项只是解释价格？</h2>
+        <ul>
+          <li><strong>先找股票成交回报。</strong>按各笔成交量乘各自成交价，再汇总。最优报价、最后成交价和自己的成交均价不能互换。如果当天没留下送单时的报价和数量，收付仍然查得清，但不能事后硬把每一分钱都分成价差和滑点。</li>
+          <li><strong>再找账上另扣的钱。</strong>核对佣金、按该日期和该市场适用的交易税费，以及券商是否向客户转收。SEC 在<a href="https://www.sec.gov/answers/sec31.htm">《“SEC Fee” — Section 31 Transaction Fees》（2013 年 9 月 25 日修订）开头三段</a>区分了自律组织向 SEC 缴费和券商向客户收费。账户被扣多少，要看那份账单；不能从“零佣金”推出一律免，也不能拿机构费率再扣客户一次。</li>
+          <li><strong>最后才拿换汇回单。</strong>本单本来就有美元，没有人民币换成美元这一笔，兑换价差和兑换手续费均为零。若真实交易先购汇再结汇，银行或券商卖给你美元、从你手里买回美元，可能用不同的报价，“免换汇手续费”也不等于两个价相同。单独做本币账：用回单实际支付和收到的本币，另计尚未含在回单净额里的明列费用；实际兑换价里已经体现的价差不再扣一次。两次换汇隔了日子，汇率本身也可能变，不都是收费。</li>
+        </ul>
+
+        <h2>下班三分钟：只剩四十股愿意出这个价</h2>
+        <p>重置到最初的盘：你还没买，100 股都能按 10.02 美元买进，仍无另扣费用。现在只把<strong>买盘</strong>变薄：9.98 只接 40 股，下一档 9.93 能接剩余 60 股。你需要立刻买入并全部卖回，给这次练习设的损失上限是 5 美元。先选做或不做，写下预计卖回多少钱；有人建议“卖单限价 9.98 就不会超支”，也写下这个办法能不能完成任务，再展开。</p>
+        <details><summary>展开对账：价格守住了，数量呢？</summary>
+          <p><strong>不做这次立即往返。</strong>买进须付 1,002；若立即卖光，收 40 × 9.98 + 60 × 9.93 = 399.20 + 595.80 = 995 美元，净少 7 美元，超过 5。用送单前的买一 9.98 作卖出基准，60 股每股少收 0.05，解释了新增的 3 美元；最初的 4 美元价差已在 7 美元里面。</p>
+          <p>若卖出限价 9.98，此刻最多成交 40 股，余下 60 股还在手里；它限制了卖价，没有完成“立刻全部卖回”。翻一笔自己的旧委托，看找不找得到当时的可成交数量；如果只剩成交回报，就把能算的净收付写下来，把无法还原的滑点留空。</p>
+        </details>
+      </div>
+    </article>
+  </main>
+  <footer class="wrap"><a rel="prev" href="14.html">上一课：14 两地交易规则</a><a href="../index.html#u03">单元目录</a><a rel="next" href="16.html">下一课：16 核对交割单</a></footer>
+</body>
+</html>

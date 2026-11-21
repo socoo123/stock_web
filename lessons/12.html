@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="把两张买单、三张卖单排成队：一笔买单如何产生三条成交、留下 100 股，又为什么可能来不及撤？">
+  <title>第 12 课｜我点了买入，谁卖给我？｜小白的股票投资启蒙课</title>
+  <link rel="icon" type="image/svg+xml" href="../dollar.svg">
+  <link rel="stylesheet" href="../reading.css?v=4">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="../index.html"><img src="../dollar.svg" width="28" height="28" alt="">小白的股票投资启蒙课</a>
+      <nav aria-label="课程导航"><a href="../index.html#u03">课程目录</a></nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <article class="reading-page" aria-labelledby="lesson-title">
+      <div class="margin-note"><p>第三单元</p><small>第 12 课</small></div>
+      <div class="prose">
+        <h1 id="lesson-title">我点了买入，谁卖给我？</h1>
+        <p>模拟账本里有一行委托：“不超过每股 10.06 元，买 500 股。”如果全市场眼下只有 400 股在等着卖，券商会补足最后 100 股吗？如果你随后点撤单，能把已经买到的部分也退掉吗？拿五张纸做一遍，就能知道该在账本上记几笔。</p>
+        <p>时间定在 <strong>2024 年 6 月 17 日周一，北京时间 10:00</strong>。场景是沪市主板普通 A 股、正常交易中的连续竞价，上一笔成交在 10.00 元。下图是当时全部有效订单的<strong>课堂快照</strong>，不是当日某只股票的实录。所有价格都是人民币元/股，买方资金、卖方可卖股份充足，不计费用。每次对照都从这五张卡重新开始，只插入文中明说的事件。</p>
+        <h2>先分两队，再决定谁站在队首</h2>
+        <p>你把委托交给券商，券商按你的意思向交易所申报。买卖双方不必互相认识；在这次连续竞价中，交易主机把一张新买单与<strong>符合条件的卖单</strong>配在一起。券商负责替你报，交易所依规则撮合，都不会因为你填了 500 就承诺卖足 500。下面的甲乙丙是为了认出订单，不是从行情里查出了人的姓名。</p>
+        <figure class="lesson-figure">
+          <svg viewBox="0 0 320 256" role="img" aria-labelledby="queue-title" aria-describedby="queue-desc">
+            <title id="queue-title">五张订单卡，按对手会遇到的顺序排两队</title>
+            <desc id="queue-desc">左队从高到低：买甲 9.98 元 100 股，买乙 9.97 元 100 股。右队从低到高：卖甲和卖乙都是 10.02 元各 100 股，甲先到；卖丙 10.05 元 200 股。卖丙虽最早到，但因价格更高而排在两张便宜卖单之后。</desc>
+            <g text-anchor="middle"><text x="78" y="18">卖出时找买方 ↓</text><text x="242" y="18">买入时找卖方 ↓</text></g>
+            <g fill="var(--tint)" stroke="var(--accent)"><rect x="4" y="30" width="148" height="52" rx="4"/><rect x="168" y="30" width="148" height="52" rx="4"/></g>
+            <g fill="none" stroke="var(--rule)"><rect x="4" y="112" width="148" height="52" rx="4"/><rect x="168" y="112" width="148" height="52" rx="4"/><rect x="168" y="194" width="148" height="52" rx="4"/></g>
+            <g stroke="var(--accent)" fill="none" stroke-width="2"><path d="M78 86v21m-4 -5 4 5 4 -5M242 86v21m-4 -5 4 5 4 -5M242 168v21m-4 -5 4 5 4 -5"/></g>
+            <g text-anchor="middle"><text x="78" y="52">买甲 · 9.98</text><text x="78" y="72">100 股</text><text x="242" y="52">卖甲 · 10.02</text><text x="242" y="72">100 股｜同价先到</text><text x="78" y="134">买乙 · 9.97</text><text x="78" y="154">100 股</text><text x="242" y="134">卖乙 · 10.02</text><text x="242" y="154">100 股｜同价后到</text><text x="242" y="216">卖丙 · 10.05</text><text x="242" y="236">200 股｜要价更高</text></g>
+          </svg>
+          <figcaption>每框是一张已被主机接受、尚未成交的卡；纵向箭头表示找对手的次序，不表示先后到达。买方出价高的在前，卖方要价低的在前，同侧同价才按时间排。图上每张卡的价格单位为元/股。</figcaption>
+        </figure>
+        <p>刻意让卖丙<strong>比卖甲还早到</strong>：丙先挂 10.05，甲随后挂 10.02，乙最后也挂 10.02。甲乙要价更低，买家先遇到它们，这是<strong>价格优先</strong>。甲与乙同方向同价，甲先被主机接受，就先遇到甲，这是<strong>时间优先</strong>。假如只来 100 股够价的买单，甲会全成，乙一股也不分；不是把 100 股平均分给这两张卡。手机上谁先按键，不等于交易主机先收到谁。</p>
+        <h2>把买单送进来，每成交一次就划掉相同股数</h2>
+        <p>重置快照。你的<strong>限价买单 10.06 元、500 股</strong>被接受。10.06 是你允许的最高买价；它高过卖一时，连续竞价先按已经在等的最低卖价成交，不会为了你肯付 10.06 就替卖家涨价。左边两张买卡与你同方向，不能卖给你。沿右边从上往下走：</p>
+        <table>
+          <caption>同一张 500 股买单的三笔成交回报（人民币，不计费用）</caption>
+          <thead><tr><th scope="col">卖方卡</th><th scope="col">本笔成交：股数 × 单价</th><th scope="col">买单尚余</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">卖甲</th><td>100 × 10.02 = 1002 元</td><td>400 股</td></tr>
+            <tr><th scope="row">卖乙</th><td>100 × 10.02 = 1002 元</td><td>300 股</td></tr>
+            <tr><th scope="row">卖丙</th><td>200 × 10.05 = 2010 元</td><td>100 股</td></tr>
+          </tbody>
+        </table>
+        <p>到账本上，<strong>已成 400 股，成交金额 4014 元；另有 100 股未成</strong>。不是 500 × 10.06 元的成交，也不能把最后那笔 10.05 当成全部 400 股的价格。三张卖卡都用完了，原来两张买卡仍在。你的余量此时变成一张<strong>10.06 元等买 100 股</strong>的卡，排在 9.98 与 9.97 前面；这 100 股没有对应的成交回报。若不撤，它继续参加当日竞价，不是第二天自动再排一次。</p>
+        <h2>只交换两条消息的顺序，已成数量会不同</h2>
+        <p>现在你不想再买余下 100 股，发出撤单；另一人也向主机发来一张“限价 10.04 元卖 100 股”的单。下面两条路<strong>各自</strong>从五张卡重演上面的三笔成交；共同起点都是已成 400、挂买 100。唯一不同的是主机先处理哪一条：</p>
+        <ul>
+          <li><strong>先确认撤单。</strong>你的余下 100 股先从簿上拿走，已成的 400 股不动。新卖单到时，最高买价退回 9.98，够不上卖家底线 10.04，新卖单留下等。你这张委托结账：<strong>成交 400 股、4014 元；撤掉 100 股；仍挂 0 股</strong>。</li>
+          <li><strong>先撮合新卖单。</strong>当时最高买价还是你的 10.06，新卖家肯收 10.04，按簿上在等的买价 <strong>10.06</strong> 成交，不是按新卖家的 10.04 成交。你再买到 100 股，增加 1006 元。随后撤单已无余量可撤：<strong>成交 500 股、5020 元；撤掉 0 股；仍挂 0 股</strong>。</li>
+        </ul>
+        <p>所以“按过撤单键”和“撤掉了 100 股”不是同一件事。核对的是原委托的成交回报与撤单确认：<strong>委托股数 = 已成交股数 + 已撤股数 + 仍挂股数</strong>（此处两种情形均在盘中，没有到期失效的部分）。不知道撤成多少时就另发 100 股去补，可能把本已买足的账又添一笔。</p>
+        <p>规则见上交所 <a href="https://www.sse.com.cn/lawandrules/sselawsrules2025/repeal/rules/c/c_20250612_10824490.shtml">2023 年 2 月 17 日上证发〔2023〕32 号通知</a>的<a href="https://www.sse.com.cn/lawandrules/sselawsrules2025/repeal/rules/c/10824490/files/dcbe58edb194451d93f19b1f7dd8fb4c.docx">附件 1《上海证券交易所交易规则（2023 年修订）》</a>。第 3.5.1、3.5.3 条规定排序与连续竞价成交价；第 3.3.18 条规定当日余量；第 3.2.9、3.3.1 条分别规定只可撤未成交部分、撤销指令经主机确认才有效；第 3.5.5、3.5.6 条说明成交成立及成交记录的依据。这里谈的是上午 10:00 的正常连续竞价，不是所有时段都能撤。</p>
+        <h2>下班三分钟：撤了低价单，再报同价，能插到队首吗？</h2>
+        <p>回到最初五张卡，不下那张 500 股的单。这次看买方：设买乙原本比买甲先到。买乙撤掉 9.97 元的 100 股（已确认），<strong>重新申报 9.98 元买 100 股</strong>，也已被主机接受。你手里有可卖的 100 股，愿收每股至少 9.97 元、希望现在成交。你会直接报这个底价，还是因为买乙刚换单就再等？先写下谁会跟你成交、成交价和另一张卡的余量。</p>
+        <details><summary>展开理由：到底比较哪一张卡的时间？</summary><p>可以按自己的底价报卖。此时最高买价 9.98，有两张卡；比的是这两张<strong>仍有效的 9.98 元申报</strong>何时到主机，不比谁的主人今天来得早。买甲的卡一直在，先跟你成交 100 股，成交价为已挂的 9.98，收入 998 元。买乙的新卡晚到，100 股原样留下；撤掉的 9.97 卡不会把老排位传给新卡。</p><p>找一笔自己撤过又重报的旧单，分别看原单的成交数量、撤销数量、新单的受理时间。没有这些回报时，不凭“我挂得很早”推定自己排第一。</p></details>
+      </div>
+    </article>
+  </main>
+  <footer class="wrap"><a rel="prev" href="11.html">上一课：11 看懂报价</a><a href="../index.html#u03">单元目录</a><a rel="next" href="13.html">下一课：13 市价与限价</a></footer>
+</body>
+</html>

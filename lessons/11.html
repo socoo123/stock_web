@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="同一张模拟沪市报价单：上一笔成交在 10 元，现在买 100 股要问谁、卖 100 股又要问谁？用两边各一笔账看懂四分钱的价差。">
+  <title>第 11 课｜屏幕显示 10 元，我为什么不能按 10 元买？｜小白的股票投资启蒙课</title>
+  <link rel="icon" type="image/svg+xml" href="../dollar.svg">
+  <link rel="stylesheet" href="../reading.css?v=4">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="../index.html"><img src="../dollar.svg" width="28" height="28" alt="">小白的股票投资启蒙课</a>
+      <nav aria-label="课程导航"><a href="../index.html#u03">课程目录</a></nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <article class="reading-page" aria-labelledby="lesson-title">
+      <div class="margin-note"><p>第三单元</p><small>第 11 课</small></div>
+      <div class="prose">
+        <h1 id="lesson-title">屏幕显示 10 元，我为什么不能按 10 元买？</h1>
+        <p>你给模拟账本定了一条规矩：买 100 股，最多花 1000 元。行情页上最大的数字恰好是 10.00。朋友说：“正好够，现在就能买到。”先别改预算。要判断这句话，该看已经成交的那一行，还是现在愿意卖的那一行？</p>
+        <h2>一张成交小票，五张还在等的报价卡</h2>
+        <p><strong>课堂快照：</strong>2024 年 6 月 17 日，星期一，北京时间 10:00。沪市主板一只正常交易的普通 A 股正处于连续竞价，交易主机逐笔处理买卖申报。上一笔成交价是每股 10.00 元。此刻簿上只有以下五张有效限价单；价格均为人民币元/股，数量均为股，不计税费。下面每次试算都把这五张卡放回原位，假定下单到达前没人先动，不是真实证券的历史行情。</p>
+        <ul>
+          <li><strong>等着买：</strong>一张出 9.98 元买 100 股，另一张出 9.97 元买 100 股。出价最高的 9.98 是“买一”。这是别人愿意<strong>买</strong>的价，你想卖才会找他。</li>
+          <li><strong>等着卖：</strong>10.02 元先后到了两张卖单，各 100 股；还有一张要 10.05 元，卖 200 股。要价最低的 10.02 是“卖一”。你想买，先问这边。</li>
+        </ul>
+        <p>报价屏若按价位合并，卖一会显示 <strong>10.02 元、200 股</strong>。这并不是刚有 200 股成交，而是有 200 股正在这个价位等买家。10.00 则相反：它是成交记录，说明刚才有买卖双方谈拢了，没说那位卖家还有一股没卖。</p>
+        <figure class="lesson-figure">
+          <svg viewBox="0 0 320 206" role="img" aria-labelledby="quote-title" aria-describedby="quote-desc">
+            <title id="quote-title">现在买和现在卖，要读价格轴的两端</title>
+            <desc id="quote-desc">上一笔成交在每股 10.00 元，价格轴上此刻并无这张报价卡。独立试卖 100 股会碰到左端的买一 9.98，试买 100 股会碰到右端的卖一 10.02，两端相差每股 0.04 元。</desc>
+            <rect x="70" y="4" width="180" height="31" rx="4" fill="none" stroke="var(--rule)"/>
+            <text x="160" y="25" text-anchor="middle">上一笔成交：10.00</text>
+            <path d="M160 37V71" stroke="var(--muted)" stroke-dasharray="3 4"/>
+            <g fill="none" stroke="var(--accent)" stroke-width="2"><path d="M48 76H272M48 69V83M160 71V81M272 69V83"/><path d="M48 148V119m-4 5 4 -5 4 5M272 148V119m-4 5 4 -5 4 5"/></g>
+            <g text-anchor="middle"><text x="48" y="105">买一 9.98</text><text x="160" y="105">无单 10.00</text><text x="272" y="105">卖一 10.02</text><text x="48" y="169">现在卖</text><text x="272" y="169">现在买</text><text x="160" y="196">两端相差 0.04 元/股</text></g>
+          </svg>
+          <figcaption>横轴从左到右价格升高，单位为人民币元/股。沿“现在卖”“现在买”的箭头找对手；上方虚线只标上一笔的位置，并不是第三个可以点选的报价。这一次它恰好在正中。</figcaption>
+        </figure>
+        <h2>愿意等，和愿意多付两元，是两件事</h2>
+        <p><strong>1000 元是硬上限。</strong>你可以先不下单；也可以报“限价 10.00 元买 100 股”，意即绝不以高于 10.00 的价格买。对面最低还要 10.02，眼下成交 <strong>0 股、成交金额 0 元</strong>。若申报被接受，你的 100 股成为新的买一；卖一仍是 10.02。买卖价差因此已从 0.04 缩到 0.02，最新成交价却没动。账本应写“已报，等 100 股”，不能写“以 1000 元买入”。挂单可能占用可用资金，但占用不等于成交付款。</p>
+        <p><strong>只改一个条件：</strong>还是从最初的五张卡开始，这次允许为这 100 股多花 2 元，而且希望当下买到。报“限价 10.02 元买 100 股”，正好碰到 10.02 的卖单。未插入其他指令时，成交回报是 <strong>100 股 × 10.02 = 1002 元</strong>，这一笔买单不再有余量。卖一仍可能显示 10.02，因为第二张 100 股还在。与上一笔 10.00 相比多付 2 元，是相对历史价算的差，不是另收的手续费。预算若仍是 1000 元，屏幕字号再大也不该替你改上限。</p>
+        <p>再把五张卡复原。换成另一位<strong>原本就有 100 股可卖</strong>的人，若愿按买一成交，收入是 100 × 9.98 = <strong>998 元</strong>。两位交易者面对同一时刻、同一只股票、同样 100 股，现在买付 1002，现在卖收 998。报价的两端相差 10.02 − 9.98 = <strong>0.04 元/股</strong>，100 股就是 4 元。这才是<strong>买卖价差</strong>；它在两个价格里，不是从每个人的账上再各扣 4 元。这是两次独立试算，不是假设沪市普通 A 股能把刚买的这 100 股马上卖掉。</p>
+        <p>真实下单时，你看得到的是那一刻的报价，看不到下一条会先到的指令。即使画面上有 200 股等卖，也没人为你的点击预留其中 100 股。判断做得对不对，应看你当时接受的价格边界；究竟买到多少，要看自己的成交回报。</p>
+        <p>可对照上交所 <a href="https://www.sse.com.cn/lawandrules/sselawsrules2025/repeal/rules/c/c_20250612_10824490.shtml">2023 年 2 月 17 日发布的上证发〔2023〕32 号通知（历史归档）</a>。其<a href="https://www.sse.com.cn/lawandrules/sselawsrules2025/repeal/rules/c/10824490/files/dcbe58edb194451d93f19b1f7dd8fb4c.docx">附件 1《上海证券交易所交易规则（2023 年修订）》</a>第 5.2.2 条把连续竞价行情里的“最新成交价格”与实时最优五档买、卖申报的价格和数量分开列出；第 3.2.8、3.5.3 条分别说明限价委托、连续竞价的成交价。五张卡上的数字是课堂设定，不是交易所公布的报价。</p>
+        <h2>下班三分钟：没人成交，能卖的价变了吗？</h2>
+        <p>重置快照。你原本就有 100 股可卖，只愿以不低于 10.00 元的价格当下卖掉。原先只有 9.98、9.97 两张买单，你决定等。现在<strong>新增一张 10.01 元买 100 股的有效单</strong>，其余不变；尚无新成交。你是继续等卖一降到 10.00，还是按自己的底线报卖？先写出你要找的对手价、预计收款和新的价差，再展开。</p>
+        <details><summary>展开理由：哪个数字没动，哪一边已经够价？</summary><p>现在可以报“限价 10.00 元卖 100 股”。在该买单仍在的假设下，交易主机先找最高买价 10.01，以它成交，收入 <strong>1001 元</strong>，不是 1000 元。不是去等另一位卖家降价。就在你的卖单到达之前，最新成交价还是 10.00，新买一已到 10.01、卖一仍是 10.02，价差只剩 <strong>0.01 元/股</strong>。上一笔价格甚至不在这两个报价之间；它不是买卖价的平均数。</p><p>翻一笔旧交易：当时记下的是“最新”还是你所需那一边的价和量？若只有收盘后的走势图，就写“没有当时报价”，别用收盘价补造一张买单。</p></details>
+      </div>
+    </article>
+  </main>
+  <footer class="wrap"><a rel="prev" href="10.html">上一课：10 A 股的来历</a><a href="../index.html#u03">单元目录</a><a rel="next" href="12.html">下一课：12 谁卖给我？</a></footer>
+</body>
+</html>
