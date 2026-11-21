@@ -1,10 +1,10 @@
 # 《小白的股票投资启蒙课》接力记录
 
-**下次输入：`/stock-next U07`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
+**下次输入：`/stock-next U08`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
 
-- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)、[第三单元 11–16 课](https://socoo123.github.io/stock_web/#u03)、[第四单元 17–21 课](https://socoo123.github.io/stock_web/#u04)、[第五单元 22–31 课](https://socoo123.github.io/stock_web/#u05)、[第六单元 32–37 课](https://socoo123.github.io/stock_web/#u06)。
-- 已上线正文：**37 / 66**。U06 [Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44910479979)，32–37 课线上均返回 HTTP 200。已复核季报持仓与基准、借股账及期权到期损益；本地在 375px 宽逐课检查机制图和展开练习。线上从单元目录进入第 33 课，展开九一配比的穿透账，再翻至第 34 课并返回单元目录。
-- 本批：**U07，38–43 课｜宏观与政治：一条新闻怎样传到我的钱**。六课已统稿，算例与来源已核；本地 375px 已从目录读完六课、逐页展开答案并返回目录。只待 Pages 发布与线上核验，不再派写。
+- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)、[第三单元 11–16 课](https://socoo123.github.io/stock_web/#u03)、[第四单元 17–21 课](https://socoo123.github.io/stock_web/#u04)、[第五单元 22–31 课](https://socoo123.github.io/stock_web/#u05)、[第六单元 32–37 课](https://socoo123.github.io/stock_web/#u06)、[第七单元 38–43 课](https://socoo123.github.io/stock_web/#u07)。
+- 已上线正文：**43 / 66**。U07 [Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44913175818)，38–43 课线上均返回 HTTP 200。已复算贷款、订单、汇率、关税、停飞与半年现金账。本地 375px 已逐课检查机制图、练习与导航；线上从目录进入 42，展开备件练习，翻到 43 并返回单元目录。
+- 下一批：**U08，44–48 课｜五场历史实验：找相同机制，也找不同结局**。按 44–45、46–47、48 分工，尚未派发。开工先固定每案决策日能取得的材料；指数比较注明起点、币种与分红口径，互联网案例不能只挑幸存公司。U07 无待统稿或待发布文件。
 - 写作模型：`openai-codex/gpt-6.2-astra`；思考强度：`xhigh`。通用 `task` 子 Agent 已绑定模型角色 `@chapter_worker`，直接使用绑定，不再重复传 `model`。
 - 课程范围与题目：[PLAN.md](PLAN.md)；执行规程：[stock-next](.omp/commands/stock-next.md)。如果快捷指令没有加载，可直接发送「读取 COURSE_STATUS.md 和 .omp/commands/stock-next.md，执行记录中的下一批」。
 
@@ -20,7 +20,7 @@
 | U04 | K 线与消息 | 2 | 17–19；20–21 | 17–21 均已上线 |
 | U05 | 从头读一份真实年报 | 4 | 22–23；24–26；27–29；30–31 | 22–31 均已上线 |
 | U06 | 产品、ETF、做空与期权 | 3 | 32–34；35；36–37 | 32–37 均已上线 |
-| U07 | 利率、政治与外部冲击 | 3 | 38–40；41；42–43 | 38–43 已统稿，待发布 |
+| U07 | 利率、政治与外部冲击 | 3 | 38–40；41；42–43 | 38–43 均已上线 |
 | U08 | 五场历史实验 | 3 | 44–45；46–47；48 | 未开始 |
 | U09 | 投资人的判断方法 | 3 | 49–50；51–52；53 | 未开始 |
 | U10 | 用数据制定和检验规则 | 2 | 54–55；56–58 | 未开始 |
