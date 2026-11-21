@@ -1,12 +1,12 @@
 # 《小白的股票投资启蒙课》接力记录
 
-**下次输入：`/stock-next U01`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
+**下次输入：`/stock-next U02`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
 
-- 已上线：[课程目录](https://socoo123.github.io/stock_web/)、[课程前言](https://socoo123.github.io/stock_web/preface.html)。首页的 66 条是提纲，不算课文。
-- 已上线正文：**0 / 66**。
-- 当前批次：**U01，01–05 课已统稿，待发布**。五篇正文均在 `lessons/`，目录与前后导航已接好；若发布中断，不重新派写作者。
+- 已上线：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)。[Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44891801921)；目录的五个课文链接均返回 HTTP 200，标题与目录一致。
+- 已上线正文：**5 / 66**。06–66 为提纲，尚未撰写。U01 无待合并或待发布的文件。
+- 下一批：**U02，06–10 课**，两位写作者分别负责 06–08 和 09–10，尚未派发。
 - 写作模型：`openai-codex/gpt-6.2-astra`；思考强度：`xhigh`。通用 `task` 子 Agent 已绑定模型角色 `@chapter_worker`，直接使用绑定，不再重复传 `model`。
-- 课程范围与题目：[PLAN.md](PLAN.md)；执行规程：[stock-next](.omp/commands/stock-next.md)。如果快捷指令没有加载，可直接发送「读取 COURSE_STATUS.md 和 .omp/commands/stock-next.md，执行 U01」。
+- 课程范围与题目：[PLAN.md](PLAN.md)；执行规程：[stock-next](.omp/commands/stock-next.md)。如果快捷指令没有加载，可直接发送「读取 COURSE_STATUS.md 和 .omp/commands/stock-next.md，执行记录中的下一批」。
 
 ## 各单元的写作批次
 
@@ -14,7 +14,7 @@
 
 | 批次 | 单元 | 写作者 | 各自负责的课号 | 状态 |
 |---|---|---:|---|---|
-| U01 | 暂停、回撤与下单前检查 | 3 | 01、04；02–03；05 | 01–05 已统稿，待发布 |
+| U01 | 暂停、回撤与下单前检查 | 3 | 01、04；02–03；05 | 01–05 均已上线 |
 | U02 | 股票与市场的来历 | 2 | 06–08；09–10 | 未开始 |
 | U03 | 下单与交易成本 | 3 | 11–13；14；15–16 | 未开始 |
 | U04 | K 线与消息 | 2 | 17–19；20–21 | 未开始 |
