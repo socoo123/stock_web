@@ -1,10 +1,10 @@
 # 《小白的股票投资启蒙课》接力记录
 
-**下次输入：`/stock-next U06`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
+**下次输入：`/stock-next U07`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
 
-- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)、[第三单元 11–16 课](https://socoo123.github.io/stock_web/#u03)、[第四单元 17–21 课](https://socoo123.github.io/stock_web/#u04)、[第五单元 22–31 课](https://socoo123.github.io/stock_web/#u05)。
-- 已上线正文：**31 / 66**。U05 [Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44909503395)，22–31 课线上均返回 HTTP 200。本地按 375px 宽逐课核验图表、翻页和展开练习；线上从第五单元目录进入第 30 课、翻到第 31 课，展开估值交卷样例后返回单元目录。
-- 当前批：**U06，32–37 课｜产品地图：个股、ETF、做空和期权**。六课均已落盘、统稿并完成本地手机核验；目录与前后导航已接入。待发布：推送 `main`，确认 Pages 部署、线上六课与返回目录后再推进关键词。不需重新派稿。
+- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)、[第三单元 11–16 课](https://socoo123.github.io/stock_web/#u03)、[第四单元 17–21 课](https://socoo123.github.io/stock_web/#u04)、[第五单元 22–31 课](https://socoo123.github.io/stock_web/#u05)、[第六单元 32–37 课](https://socoo123.github.io/stock_web/#u06)。
+- 已上线正文：**37 / 66**。U06 [Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44910479979)，32–37 课线上均返回 HTTP 200。已复核季报持仓与基准、借股账及期权到期损益；本地在 375px 宽逐课检查机制图和展开练习。线上从单元目录进入第 33 课，展开九一配比的穿透账，再翻至第 34 课并返回单元目录。
+- 下一批：**U07，38–43 课｜宏观与政治：一条新闻怎样传到我的钱**。三位写作者按 38–40、41、42–43 分工，尚未派发。开工先固定贷款重定价、外币货款的方向与时点，以及政策生效和外部冲击案例的原始材料。U06 无待统稿或待发布文件。
 - 写作模型：`openai-codex/gpt-6.2-astra`；思考强度：`xhigh`。通用 `task` 子 Agent 已绑定模型角色 `@chapter_worker`，直接使用绑定，不再重复传 `model`。
 - 课程范围与题目：[PLAN.md](PLAN.md)；执行规程：[stock-next](.omp/commands/stock-next.md)。如果快捷指令没有加载，可直接发送「读取 COURSE_STATUS.md 和 .omp/commands/stock-next.md，执行记录中的下一批」。
 
@@ -19,7 +19,7 @@
 | U03 | 下单与交易成本 | 3 | 11–13；14；15–16 | 11–16 均已上线 |
 | U04 | K 线与消息 | 2 | 17–19；20–21 | 17–21 均已上线 |
 | U05 | 从头读一份真实年报 | 4 | 22–23；24–26；27–29；30–31 | 22–31 均已上线 |
-| U06 | 产品、ETF、做空与期权 | 3 | 32–34；35；36–37 | 32–37 已统稿，待发布 |
+| U06 | 产品、ETF、做空与期权 | 3 | 32–34；35；36–37 | 32–37 均已上线 |
 | U07 | 利率、政治与外部冲击 | 3 | 38–40；41；42–43 | 未开始 |
 | U08 | 五场历史实验 | 3 | 44–45；46–47；48 | 未开始 |
 | U09 | 投资人的判断方法 | 3 | 49–50；51–52；53 | 未开始 |
