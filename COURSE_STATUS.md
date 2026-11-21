@@ -1,10 +1,10 @@
 # 《小白的股票投资启蒙课》接力记录
 
-**下次输入：`/stock-next U03`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
+**下次输入：`/stock-next U04`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
 
-- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)。
-- 已上线正文：**10 / 66**。U02 五课均返回 HTTP 200；[Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44895123094)。已在 375px 宽页面逐课验证目录往返、解释图和展开练习，并在线从目录进入 08、翻到 09 再返回。
-- 当前批：**U03，11–16 课**。六篇正文均已落盘、统稿，目录与第 10 课已接入；待完成手机阅读核验并发布，尚未计入上线课数。
+- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)、[第三单元 11–16 课](https://socoo123.github.io/stock_web/#u03)。
+- 已上线正文：**16 / 66**。U03 [Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44896139563)，六课线上均返回 HTTP 200。已在 375px 宽页面逐课验证目录往返、解释图与展开练习；线上从目录进入 15 课，翻到 16 课展开对账，再返回第三单元。
+- 下一批：**U04，17–21 课｜K 线和市场消息**。两位写作者分别负责 17–19（四价、跨周期、成交量与深度）和 20–21（复权与分红、新闻与原始公告），尚未派发。U03 无待合并或待发布文件。
 - 写作模型：`openai-codex/gpt-6.2-astra`；思考强度：`xhigh`。通用 `task` 子 Agent 已绑定模型角色 `@chapter_worker`，直接使用绑定，不再重复传 `model`。
 - 课程范围与题目：[PLAN.md](PLAN.md)；执行规程：[stock-next](.omp/commands/stock-next.md)。如果快捷指令没有加载，可直接发送「读取 COURSE_STATUS.md 和 .omp/commands/stock-next.md，执行记录中的下一批」。
 
@@ -16,7 +16,7 @@
 |---|---|---:|---|---|
 | U01 | 暂停、回撤与下单前检查 | 3 | 01、04；02–03；05 | 01–05 均已上线 |
 | U02 | 股票与市场的来历 | 2 | 06–08；09–10 | 06–10 均已上线 |
-| U03 | 下单与交易成本 | 3 | 11–13；14；15–16 | 11–16 已统稿，待发布 |
+| U03 | 下单与交易成本 | 3 | 11–13；14；15–16 | 11–16 均已上线 |
 | U04 | K 线与消息 | 2 | 17–19；20–21 | 未开始 |
 | U05 | 从头读一份真实年报 | 4 | 22–23；24–26；27–29；30–31 | 未开始 |
 | U06 | 产品、ETF、做空与期权 | 3 | 32–34；35；36–37 | 未开始 |
