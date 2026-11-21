@@ -1,10 +1,10 @@
 # 《小白的股票投资启蒙课》接力记录
 
-**下次输入：`/stock-next U10`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
+**下次输入：`/stock-next U11`**。一批是一个单元。每批结束后停下来，由读者在新会话输入下一条指令，不自动连写。
 
-- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)、[第三单元 11–16 课](https://socoo123.github.io/stock_web/#u03)、[第四单元 17–21 课](https://socoo123.github.io/stock_web/#u04)、[第五单元 22–31 课](https://socoo123.github.io/stock_web/#u05)、[第六单元 32–37 课](https://socoo123.github.io/stock_web/#u06)、[第七单元 38–43 课](https://socoo123.github.io/stock_web/#u07)、[第八单元 44–48 课](https://socoo123.github.io/stock_web/#u08)、[第九单元 49–53 课](https://socoo123.github.io/stock_web/#u09)。
-- 已上线正文：**53 / 66**。U09 [Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44915829643)，49–53 课线上均返回 HTTP 200，正文与核验稿一致。已对读五位作者的原文，复算清算折扣、业主可取现金、同店利润、增发后的每股收益和扣费后回报。375px 下逐课查看图表、展开练习；在线从目录进入 52，展开融资题，翻到 53 填写复核卡并返回单元目录。
-- 当前批：**U10，54–58 课｜量化不神秘：用表格就能开始**。五课均已落盘、统稿，已接通目录与 53→58 导航。待发布并核验 Pages；若中断，只恢复发布，不重派写作。
+- 阅读入口：[课程目录](https://socoo123.github.io/stock_web/)、[前言](https://socoo123.github.io/stock_web/preface.html)、[第一单元 01–05 课](https://socoo123.github.io/stock_web/#u01)、[第二单元 06–10 课](https://socoo123.github.io/stock_web/#u02)、[第三单元 11–16 课](https://socoo123.github.io/stock_web/#u03)、[第四单元 17–21 课](https://socoo123.github.io/stock_web/#u04)、[第五单元 22–31 课](https://socoo123.github.io/stock_web/#u05)、[第六单元 32–37 课](https://socoo123.github.io/stock_web/#u06)、[第七单元 38–43 课](https://socoo123.github.io/stock_web/#u07)、[第八单元 44–48 课](https://socoo123.github.io/stock_web/#u08)、[第九单元 49–53 课](https://socoo123.github.io/stock_web/#u09)、[第十单元 54–58 课](https://socoo123.github.io/stock_web/#u10)。
+- 已上线正文：**58 / 66**。U10 [Pages 部署成功](https://github.com/socoo123/stock_web/actions/runs/44916876603)，目录及 53–58 课均返回 HTTP 200，与核验稿逐字节一致。已复算再平衡、成交延迟、三种回测偏差、年化、回撤与前高收复时长。375px 下逐课查看图表；在线从目录进入 56，逐期揭价、核对成交，再经 57 到 58 展开付款题并返回单元目录。
+- 下一批：**U11，59–62 课｜普通人能掌控的事：期限、成本、复利和风险**。按 59–60、61–62 分工，尚未派发。先写明家庭的用款日和每笔资金何时可用，再比较复利与费用、投入时点和不同的保护办法。U10 无待统稿或待发布文件。
 - 写作模型：`openai-codex/gpt-6.2-astra`；思考强度：`xhigh`。通用 `task` 子 Agent 已绑定模型角色 `@chapter_worker`，直接使用绑定，不再重复传 `model`。
 - 课程范围与题目：[PLAN.md](PLAN.md)；执行规程：[stock-next](.omp/commands/stock-next.md)。如果快捷指令没有加载，可直接发送「读取 COURSE_STATUS.md 和 .omp/commands/stock-next.md，执行记录中的下一批」。
 
@@ -23,7 +23,7 @@
 | U07 | 利率、政治与外部冲击 | 3 | 38–40；41；42–43 | 38–43 均已上线 |
 | U08 | 五场历史实验 | 3 | 44–45；46–47；48 | 44–48 均已上线 |
 | U09 | 投资人的判断方法 | 3 | 49–50；51–52；53 | 49–53 均已上线 |
-| U10 | 用数据制定和检验规则 | 2 | 54–55；56–58 | 54–58 已统稿，待发布 |
+| U10 | 用数据制定和检验规则 | 2 | 54–55；56–58 | 54–58 均已上线 |
 | U11 | 普通人的投资安排 | 2 | 59–60；61–62 | 未开始 |
 | U12 | AI 研究与毕业练习 | 2 | 63–64；65–66 | 未开始 |
 
